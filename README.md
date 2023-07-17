@@ -14,5 +14,5 @@ Materiales utilizados:
 - Baterias 18650
 - Lector Micro SD
 
-# Areas de oportunidad 
+#Areas de oportunidad 
 
