@@ -13,6 +13,7 @@ Materiales utilizados:
 - Memoria externa 5V - 2A (max 2.4A)
 - Baterias 18650
 - Lector Micro SD
+- Point d'access
 
 # Areas de oportunidad 
 
