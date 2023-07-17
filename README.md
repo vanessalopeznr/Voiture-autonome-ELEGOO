@@ -15,7 +15,7 @@ Materiales utilizados:
 - Lector Micro SD
 - Point d'access
 
-# Areas de oportunidad 
+## Areas de oportunidad 
 
 - Gérer la détection de plusieurs personnes.
 - Entrainer la réseau de neurones pour qu'il reconnaisse la voiture de devant (ou autre chose), sous différents angles.
