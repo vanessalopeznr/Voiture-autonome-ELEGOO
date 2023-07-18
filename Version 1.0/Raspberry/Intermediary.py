@@ -133,11 +133,7 @@ try:
         print(command_list)
         
         ser.write((str(command)+"_").encode('utf-8'))
-        
-        
-        
-    #command_list=receive_from_raspberry()
-    #print(command_list)
+
 
 except KeyboardInterrupt:
     ser.close()
