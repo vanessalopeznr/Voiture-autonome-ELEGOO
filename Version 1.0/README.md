@@ -19,9 +19,10 @@
    ```
 
 3. Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
+   
    La configuracion utilizada se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) especificamente utilizada para Raspberry camara V2.1 **Poner ruta del archivo config.txt**
    
-   Si se desea utilizar otra camara,
+   Si se desea utilizar otra camara, se puede consultar la siguiente tabla en la [[Documentacion]](https://www.raspberrypi.com/documentation/computers/camera_software.html)
    | Camera Module  | In /boot/config.txt |
    | ------------- | ------------- |
    | V1 camera (OV5647) | dtoverlay=ov5647 |
@@ -29,6 +30,8 @@
    | HQ camera (IMX477) | dtoverlay=imx477 |
    | GS camera (IMX296) | dtoverlay=imx296 |
    | Camera Module 3 (IMX708) | dtoverlay=imx708 |
-   | IMX290 and IMX327 | dtoverlay=imx290,clock-frequency=74250000 or dtoverlay=imx290,clock-frequency=37125000 (both modules share the imx290 kernel driver; please refer to instructions from the module vendor for the correct frequency) |
+   | IMX290 and IMX327 | dtoverlay=imx290,clock-frequency=74250000 or dtoverlay=imx290 |
    | IMX378 | dtoverlay=imx378 |
    | OV9281 | dtoverlay=ov9281 |
+   
+   Pour activer la détection automatique de la caméra, les utilisateurs met l'entrée camera_auto_detect=1 dans le fichier config.txt. **Votre Raspberry Pi devra être redémarré après avoir modifié ce fichier**
