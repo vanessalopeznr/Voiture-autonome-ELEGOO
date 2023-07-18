@@ -34,4 +34,14 @@
    | IMX378 | dtoverlay=imx378 |
    | OV9281 | dtoverlay=ov9281 |
    
-   Pour activer la détection automatique de la caméra, les utilisateurs met l'entrée camera_auto_detect=1 dans le fichier config.txt. **Votre Raspberry Pi devra être redémarré après avoir modifié ce fichier**
+   Pour activer la détection automatique de la caméra, les utilisateurs doivent ajouter l'entrée camera_auto_detect=1 dans le fichier config.txt. **Votre Raspberry Pi devra être redémarré après avoir modifié ce fichier**
+
+   Para verificar que la Raspberry esta detectando correctamente la camara, la respuesta del siguiente comando debe ser supported=1 detected=1: 
+
+   ```
+   vcgencmd get_camera
+   ```
+
+   
+
+
