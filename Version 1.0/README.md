@@ -20,7 +20,7 @@
 
 3. Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
    
-   La configuracion utilizada se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) especificamente utilizada para Raspberry camara V2.1 **Poner ruta del archivo config.txt**
+   La configuracion utilizada es especificamente para Raspberry camara V2.1 y se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) où ce fichier est normalement accessible sous _/boot/config.txt_
    
    Si se desea utilizar otra camara, se puede consultar la siguiente tabla en la [[Documentacion]](https://www.raspberrypi.com/documentation/computers/camera_software.html)
    | Camera Module  | In /boot/config.txt |
@@ -41,7 +41,7 @@
    vcgencmd get_camera
    ```
 
-   Donde su respuesta debe ser: _**supported=1 detected=1**_
+   Donde su respuesta debe ser: _supported=1 detected=1_
 
    
 
