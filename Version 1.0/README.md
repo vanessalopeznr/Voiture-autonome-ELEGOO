@@ -41,7 +41,7 @@
    vcgencmd get_camera
    ```
 
-   Donde su respuesta debe ser: __**supported=1 detected=1**__
+   Donde su respuesta debe ser: _**supported=1 detected=1**_
 
    
 
