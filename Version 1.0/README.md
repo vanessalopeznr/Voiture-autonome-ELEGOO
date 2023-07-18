@@ -41,7 +41,28 @@
    vcgencmd get_camera
    ```
 
-   Donde su respuesta debe ser: _supported=1 detected=1_
+   Donde su respuesta debe ser: _supported=1 detected=1
+4. Realizar comunicacion mediante un punto de acceso wifi. Dispositivo utilizado TP-LINK en mode 3G/4G. **Especificar mejor**
+5. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP, inspeccionar en transmision http para sacar "stream.mjpg" **Especificar eso aqui**
+6. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
+   
+   Ejecutar los siguientes comandos para realizar la configuracion.
+
+   Abrir el archivo ejecutable que administra las configuraciones al encender el dispositivo:
+
+   ```
+   sudo nano /etc/rc.local
+   ```
+
+   Se escribe el comando que se desea ejecutar en la inicializacion del dispositivo antes de la ultima linea _exit 0_. En la configuracion de este proyecto se utilizo el comando _python3 home/vehicle2/Desktop/connectionhttp.py_
+   
+   ```
+   python3 <ruta del archivo ejecutable>
+   ```
+
+   Y finalmente, reinicializar la Raspberry para ejecutar los cambios de configuracion.
+
+   
 
    
 
