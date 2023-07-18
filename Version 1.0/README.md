@@ -13,6 +13,6 @@
 3. Instalacion de librerias necesarias
    
    Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner notre travail. Pour tout installer, executez la commande suivante:
-   '''
+   ```
    pip install -r requirements.txt
-   '''
+   ```
