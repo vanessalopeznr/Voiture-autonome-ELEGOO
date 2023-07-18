@@ -11,3 +11,8 @@
    Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD en un lector para ser lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo en la memoria Micro SD.
 
 3. Instalacion de librerias necesarias
+   
+   Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner notre travail. Pour tout installer, executez la commande suivante:
+   '''
+   pip install -r requirements.txt
+   '''
