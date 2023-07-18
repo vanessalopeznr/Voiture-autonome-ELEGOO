@@ -39,8 +39,9 @@
    Para verificar que la Raspberry esta detectando correctamente la camara, se debe utilizar el siguiente comando, confirmando la respuesta indicada:
    ```
    vcgencmd get_camera
-   #Reponse: supported=1 detected=1
    ```
+
+   Donde su respuesta debe ser: __**supported=1 detected=1**__
 
    
 
