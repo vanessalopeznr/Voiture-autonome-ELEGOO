@@ -6,11 +6,9 @@
    
    Para optimizacion de la memoria SD, es posible descargar el sistema operativo de version Lite.
 
-   **Especificar si hay que descomprimir el archivo zip o se monta asi directamente a Balena**
+   Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD en un lector para ser lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo Raspberry Pi OS (64-bit) with desktop directamente con el archivo comprimido que se descarga de la web en la memoria Micro SD.
 
-   Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD en un lector para ser lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo en la memoria Micro SD.
-
-2. Instalacion de librerias necesarias
+3. Instalacion de librerias necesarias
    
    Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner le travail. Pour tout installer, executez la commande suivante:
    ```
@@ -18,7 +16,7 @@
    pip install -r requirements.txt
    ```
 
-3. Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
+4. Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
    
    La configuracion utilizada es especificamente para Raspberry camara V2.1 y se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) où ce fichier est normalement accessible sous _/boot/config.txt_
    
@@ -42,9 +40,9 @@
    ```
 
    Donde su respuesta debe ser: _supported=1 detected=1
-4. Realizar comunicacion mediante un punto de acceso wifi. Dispositivo utilizado TP-LINK en mode 3G/4G. **Especificar mejor**
-5. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP, inspeccionar en transmision http para sacar "stream.mjpg" **Especificar eso aqui**
-6. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
+5. Realizar comunicacion mediante un punto de acceso wifi. Dispositivo utilizado TP-LINK en mode 3G/4G. **Especificar mejor**
+6. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP, inspeccionar en transmision http para sacar "stream.mjpg" **Especificar eso aqui**
+7. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
    
    Ejecutar los siguientes comandos para realizar la configuracion.
 
