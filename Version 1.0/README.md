@@ -8,6 +8,7 @@
    Para optimizacion de la memoria SD, es posible descargar el sistema operativo de version Lite.
 
    Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD en un lector para ser lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo Raspberry Pi OS (64-bit) with desktop directamente con el archivo comprimido que se descarga de la web en la memoria Micro SD.
+   
 2. Configuraciones iniciales de Raspberry
 
    Despues de instalar el sistema operativo, es necesario ingresar la Micro SD a la Raspberry, conectar una pantalla, mouse y teclado para realizar algunas configuraciones como idioma, usuario y contrasena. Finalmente, retirar nuevamente la Micro SD e ingresar el programa [intermediary.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). En este proyecto se ingreso el programa en la siguiente ruta: _/media/user/rootfs/home/vehicle2/Desktop/_
@@ -16,7 +17,7 @@
 
    Solo es necesario Python3 y ya viene instalado por defecto. Version de python utilizada para este proyecto: 3.9.2
 
-4. [Paso si se encuentran problemas al detectar la camara] Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
+4. [Paso necesario si se encuentran problemas al detectar la camara] Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
    
    La configuracion utilizada es especificamente para Raspberry camara V2.1 y se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) où ce fichier est normalement accessible sous _/boot/config.txt_
    
@@ -57,10 +58,20 @@
 7. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP
     
     En el programa [People_detection.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Computer/People_detection.py) modificar la variable _address_ y sustituir por la direccion IP de la raspberry identidficada en el paso anterior.
+
+8. Instalacion de librerias para correr programa de PC
+
+   Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner le travail. Pour tout installer, executez la commande suivante:
+   ```
+   sudo apt install python3-pip
+   pip install -r requirements.txt
+   ```
+
+### Integracion Raspberry - PC
     
-8. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
+9. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
    
-   Ejecutar los siguientes comandos para realizar la configuracion.
+   Este paso se realiza para evitar conectar las periferias a la raspberry y pueda operar automaticamente sin escribir el comando de ejecucion del programa. Ejecutar los siguientes comandos para realizar la configuracion.
 
    Abrir el archivo ejecutable que administra las configuraciones al encender el dispositivo:
 
@@ -76,13 +87,6 @@
 
    Y finalmente, reinicializar la Raspberry para ejecutar los cambios de configuracion.
 
-9. Instalacion de librerias para correr programa de PC
-
-   Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner le travail. Pour tout installer, executez la commande suivante:
-   ```
-   sudo apt install python3-pip
-   pip install -r requirements.txt
-   ```
 
    
 
