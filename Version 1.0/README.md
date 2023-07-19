@@ -12,11 +12,11 @@
 
    Despues de instalar el sistema operativo, es necesario ingresar la Micro SD a la Raspberry, conectar una pantalla, mouse y teclado para realizar algunas configuraciones como idioma, usuario y contrasena. Finalmente, retirar nuevamente la Micro SD e ingresar el programa [intermediary.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). En este proyecto se ingreso el programa en la siguiente ruta: _/media/user/rootfs/home/vehicle2/Desktop/_
 
-4. Instalacion de librerias para correr programa de Raspberry
+3. Instalacion de librerias para correr programa de Raspberry
 
    Solo es necesario Python3 y ya viene instalado por defecto. Version de python utilizada para este proyecto: 3.9.2
 
-5. [Paso si se encuentran problemas al detectar la camara] Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
+4. [Paso si se encuentran problemas al detectar la camara] Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
    
    La configuracion utilizada es especificamente para Raspberry camara V2.1 y se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) où ce fichier est normalement accessible sous _/boot/config.txt_
    
@@ -41,7 +41,7 @@
 
    Donde su respuesta debe ser: _supported=1 detected=1
    
-7. Realizar comunicacion mediante un punto de acceso wifi.
+5. Realizar comunicacion mediante un punto de acceso wifi.
 
    Se conecta el punto de acceso a una fuente de alimentacion (Power) y se realiza un reset para posteriormente conectarse a este dispositivo wifi mediante el usuario de red y la contrasena, generalmente indicadas en el dispositivo.
    
@@ -54,11 +54,11 @@
    hostname -I
    ```
 ### Configuracion de computador (Cliente)
-9. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP
+7. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP
     
     En el programa [People_detection.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Computer/People_detection.py) modificar la variable _address_ y sustituir por la direccion IP de la raspberry identidficada en el paso anterior.
     
-11. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
+8. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
    
    Ejecutar los siguientes comandos para realizar la configuracion.
 
@@ -76,7 +76,7 @@
 
    Y finalmente, reinicializar la Raspberry para ejecutar los cambios de configuracion.
 
-8. Instalacion de librerias para correr programa de PC
+9. Instalacion de librerias para correr programa de PC
 
    Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner le travail. Pour tout installer, executez la commande suivante:
    ```
