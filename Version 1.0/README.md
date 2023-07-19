@@ -13,7 +13,7 @@
 
 4. Instalacion de librerias necesarias
    
-   Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner le travail. Pour tout installer, executez la commande suivante:
+   Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner le travail. Pour tout installer, executez la commande suivante: *(SOLO ES NECESARIO INSTALAR PYTHON3)* Usado: python3 3.9.2
    ```
    sudo apt install python3-pip
    pip install -r requirements.txt
