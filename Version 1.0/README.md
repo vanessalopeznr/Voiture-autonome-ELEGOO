@@ -68,17 +68,47 @@
    pip install -r requirements.txt
    ```
    
-   Las librerias utilizadas son:
+   Algunas especificaciones son (Las librerias estan incluidas en requirements.txt para su descarga):
    
-   - Opencv version 4.5.5
-   - YOLO from ultralytics: pip install ultralytics. Si no se descarga, intentar clonar el archivo GitHub de yolov8 [Documentacion](https://docs.ultralytics.com/quickstart/)
-   - socket: Este modulo forma parte de la biblioteca estándar de Python 
+   - Opencv version 4.7.0.72
+   - YOLO from ultralytics version 8.0.117:  [Documentacion](https://docs.ultralytics.com/quickstart/) para descarga de la libreria. 
+   - socket: Este modulo forma parte de la biblioteca estándar de Python
 
-### Integracion Raspberry - PC
+9. Realizar comunicacion mediante un punto de acceso wifi (Ver paso 5).
+
+### Configuracion del arduino
+10. Para la descarga del programa tipo _.ino_ al dispositivo arduino, es necesario descargar el [Softare Arduino](https://www.arduino.cc/en/software):
+    ```
+    sudo apt install arduino
+    ```
+    Cuando la descarga finalice, abrir el programa, conectar por puerto serial USB el arduino al computador, verificar en "Outils" que le type de carte soit _Arduino Uno_ et le port soit (generalment) _/dev/ttyACMO (Arduino Uno)_ y Téléverser le code.
+
+    Finalmente, se desconecta el arduino del computador y se conecta con el mismo cable USB a la Raspberry.
     
+### Integracion PC - Raspberry - Arduino
+9. Cuando se encuentren conectados los dos dispositivos (Raspberry y computador) al punto de acceso wifi y el arduino por puerto serial a la raspberry, se ejecuta estos comandos en los respectivos dispositivos:
+
+   Ejecutar el siguiente comando en la raspberry:
+   
+   ```
+   python3 intermediary.py
+   ```
+
+   Esperar que la terminal imprima _"Waiting for command..."_ y ejecutar el siguiente comando en el computador:
+      
+   ```
+   python3 People_detection.py
+   ```
+
+   Finalmente, el programa debe mostrar la deteccion de las personas mediante la camara Raspberry y rotar el carro en direccion de la misma.
+
+   El programa se detiene, apoyando sobre las teclas `Ctr + C`.
+   
 9. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
    
-   Este paso se realiza para evitar conectar las periferias a la raspberry y pueda operar automaticamente sin escribir el comando de ejecucion del programa. Ejecutar los siguientes comandos para realizar la configuracion.
+   Este paso se realiza para evitar conectar las periferias a la raspberry y ella pueda operar automaticamente sin escribir el comando de ejecucion del programa.
+
+   Cuando el paso anterior se haya ejecutado de manera exitosa. Ejecutar los siguientes comandos para realizar la configuracion.
 
    Abrir el archivo ejecutable que administra las configuraciones al encender el dispositivo:
 
@@ -92,7 +122,11 @@
    python3 <ruta del archivo ejecutable>
    ```
 
-   Y finalmente, reinicializar la Raspberry para ejecutar los cambios de configuracion.
+   Por ultimo, reinicializar la Raspberry para ejecutar los cambios de configuracion y ahora, solo se debe ejecutar el comando del computador:
+
+   ```
+   python3 People_detection.py
+   ```
 
 
    
