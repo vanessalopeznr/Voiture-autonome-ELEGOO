@@ -133,6 +133,7 @@ try:
         print(command_list)
         
         ser.write((str(command)+"_").encode('utf-8'))
+        ser.reset_input_buffer() #If arduino send data, the buffer is where all the data arrive, reset
 
 
 except KeyboardInterrupt:
