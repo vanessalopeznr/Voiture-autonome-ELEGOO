@@ -19,7 +19,7 @@
    pip install -r requirements.txt
    ```
 
-5. Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
+5. [Paso si se encuentran problemas al detectar la camara] Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
    
    La configuracion utilizada es especificamente para Raspberry camara V2.1 y se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) où ce fichier est normalement accessible sous _/boot/config.txt_
    
@@ -43,9 +43,11 @@
    ```
 
    Donde su respuesta debe ser: _supported=1 detected=1
-6. Realizar comunicacion mediante un punto de acceso wifi. Dispositivo utilizado TP-LINK en mode 3G/4G. **Especificar mejor**
-7. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP, inspeccionar en transmision http para sacar "stream.mjpg" **Especificar eso aqui**
-8. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
+   
+7. Realizar comunicacion mediante un punto de acceso wifi. Dispositivo utilizado TP-LINK TL-MR3020 en modO 3G/4G. Solo se requiere alimentacion para el dispositivo.
+   
+9. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP, inspeccionar en transmision http para sacar "stream.mjpg" **Especificar eso aqui**
+10. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
    
    Ejecutar los siguientes comandos para realizar la configuracion.
 
