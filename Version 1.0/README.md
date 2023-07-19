@@ -18,29 +18,29 @@
    Solo es necesario Python3 y ya viene instalado por defecto. Version de python utilizada para este proyecto: 3.9.2
 
 > [Paso necesario si se encuentran problemas al detectar la camara] Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
-   
-   La configuracion utilizada es especificamente para Raspberry camara V2.1 y se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) où ce fichier est normalement accessible sous _/boot/config.txt_
-   
-   Si se desea utilizar otra camara, se puede consultar la siguiente tabla en la [[Documentacion]](https://www.raspberrypi.com/documentation/computers/camera_software.html)
-   | Camera Module  | In /boot/config.txt |
-   | ------------- | ------------- |
-   | V1 camera (OV5647) | dtoverlay=ov5647 |
-   | V2 camera (IMX219) | dtoverlay=imx219 |
-   | HQ camera (IMX477) | dtoverlay=imx477 |
-   | GS camera (IMX296) | dtoverlay=imx296 |
-   | Camera Module 3 (IMX708) | dtoverlay=imx708 |
-   | IMX290 and IMX327 | dtoverlay=imx290,clock-frequency=74250000 or dtoverlay=imx290 |
-   | IMX378 | dtoverlay=imx378 |
-   | OV9281 | dtoverlay=ov9281 |
-   
-   Pour activer la détection automatique de la caméra, les utilisateurs doivent ajouter l'entrée camera_auto_detect=1 dans le fichier config.txt. **Votre Raspberry Pi devra être redémarré après avoir modifié ce fichier**
 
-   Para verificar que la Raspberry esta detectando correctamente la camara, se debe utilizar el siguiente comando, confirmando la respuesta indicada:
-   ```
-   vcgencmd get_camera
-   ```
+> La configuracion utilizada es especificamente para Raspberry camara V2.1 y se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) où ce fichier est normalement accessible sous _/boot/config.txt_
 
-   Donde su respuesta debe ser: _supported=1 detected=1
+> Si se desea utilizar otra camara, se puede consultar la siguiente tabla en la [[Documentacion]](https://www.raspberrypi.com/documentation/computers/camera_software.html)
+> | Camera Module  | In /boot/config.txt |
+> | ------------- | ------------- |
+> | V1 camera (OV5647) | dtoverlay=ov5647 |
+> | V2 camera (IMX219) | dtoverlay=imx219 |
+> | HQ camera (IMX477) | dtoverlay=imx477 |
+> | GS camera (IMX296) | dtoverlay=imx296 |
+> | Camera Module 3 (IMX708) | dtoverlay=imx708 |
+> | IMX290 and IMX327 | dtoverlay=imx290,clock-frequency=74250000 or dtoverlay=imx290 |
+> | IMX378 | dtoverlay=imx378 |
+> | OV9281 | dtoverlay=ov9281 |
+   
+> Pour activer la détection automatique de la caméra, les utilisateurs doivent ajouter l'entrée camera_auto_detect=1 dans le fichier config.txt. **Votre Raspberry Pi devra être redémarré après avoir modifié ce fichier**
+
+> Para verificar que la Raspberry esta detectando correctamente la camara, se debe utilizar el siguiente comando, confirmando la respuesta indicada:
+> ```
+> vcgencmd get_camera
+> ```
+
+> Donde su respuesta debe ser: _supported=1 detected=1
    
 5. Realizar comunicacion mediante un punto de acceso wifi.
 
