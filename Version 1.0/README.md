@@ -62,17 +62,17 @@
 8. Recursos necesarios para correr programa de PC
    
    Solo es necesario python3. La version utilizada en este proyecto fue: python 3.8.10
-
-   Las librerias utilizadas son:
    
-   - Opencv version 4.5.5
-   - YOLO from ultralytics: pip install ultralytics. Si no se descarga, intentar clonar el archivo GitHub de yolov8 [Documentacion](https://docs.ultralytics.com/quickstart/)
-   - socket: El módulo socket forma parte de la biblioteca estándar de Python 
-     
    Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner le travail. Pour tout installer, executez la commande suivante:
    ```
    pip install -r requirements.txt
    ```
+   
+   Las librerias utilizadas son:
+   
+   - Opencv version 4.5.5
+   - YOLO from ultralytics: pip install ultralytics. Si no se descarga, intentar clonar el archivo GitHub de yolov8 [Documentacion](https://docs.ultralytics.com/quickstart/)
+   - socket: Este modulo forma parte de la biblioteca estándar de Python 
 
 ### Integracion Raspberry - PC
     
