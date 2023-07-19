@@ -17,7 +17,7 @@
 
    Solo es necesario Python3 y ya viene instalado por defecto. Version de python utilizada para este proyecto: 3.9.2
 
-> [Paso necesario si se encuentran problemas al detectar la camara] Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
+> **[Paso necesario si se encuentran problemas al detectar la camara]** Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
 
 > La configuracion utilizada es especificamente para Raspberry camara V2.1 y se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) où ce fichier est normalement accessible sous _/boot/config.txt_
 
@@ -42,24 +42,24 @@
 
 > Donde su respuesta debe ser: _supported=1 detected=1
    
-5. Realizar comunicacion mediante un punto de acceso wifi.
+4. Realizar comunicacion mediante un punto de acceso wifi.
 
    Se conecta el punto de acceso a una fuente de alimentacion (Power) y se realiza un reset para posteriormente conectarse a este dispositivo wifi mediante el usuario de red y la contrasena, generalmente indicadas en el dispositivo.
    
    Dispositivo utilizado para este proyecto: TP-LINK TL-MR3020 en modo 3G/4G.
 
-6. Identificar direccion IP de la raspberry.
+5. Identificar direccion IP de la raspberry.
 
    Posterior a la conexion de la raspberry al punto de acceso, la direccion IP del dispositivo se puede encontrar utilizando el siguiente comando:
    ```
    hostname -I
    ```
 ### Configuracion de computador (Cliente)
-7. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP
+6. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP
     
     En el programa [People_detection.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Computer/People_detection.py) modificar la variable _address_ y sustituir por la direccion IP de la raspberry identidficada en el paso anterior.
 
-8. Recursos necesarios para correr programa de PC
+7. Recursos necesarios para correr programa de PC
    
    Solo es necesario python3. La version utilizada en este proyecto fue: python 3.8.10
    
@@ -74,10 +74,10 @@
    - YOLO from ultralytics version 8.0.117:  [Documentacion](https://docs.ultralytics.com/quickstart/) para descarga de la libreria. 
    - socket: Este modulo forma parte de la biblioteca estándar de Python
 
-9. Realizar comunicacion mediante un punto de acceso wifi (Ver paso 5).
+8. Realizar comunicacion mediante un punto de acceso wifi (Ver paso 4).
 
 ### Configuracion del arduino
-10. Para la descarga del programa tipo _.ino_ al dispositivo arduino, es necesario descargar el [Softare Arduino](https://www.arduino.cc/en/software):
+9. Para la descarga del programa tipo _.ino_ al dispositivo arduino, es necesario descargar el [Softare Arduino](https://www.arduino.cc/en/software):
     ```
     sudo apt install arduino
     ```
@@ -86,7 +86,7 @@
     Finalmente, se desconecta el arduino del computador y se conecta con el mismo cable USB a la Raspberry.
     
 ### Integracion PC - Raspberry - Arduino
-9. Cuando se encuentren conectados los dos dispositivos (Raspberry y computador) al punto de acceso wifi y el arduino por puerto serial a la raspberry, se ejecuta estos comandos en los respectivos dispositivos:
+10. Cuando se encuentren conectados los dos dispositivos (Raspberry y computador) al punto de acceso wifi y el arduino por puerto serial a la raspberry, se ejecuta estos comandos en los respectivos dispositivos:
 
    Ejecutar el siguiente comando en la raspberry:
    
@@ -104,7 +104,7 @@
 
    El programa se detiene, apoyando sobre las teclas `Ctr + C`.
    
-9. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
+11. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
    
    Este paso se realiza para evitar conectar las periferias a la raspberry y ella pueda operar automaticamente sin escribir el comando de ejecucion del programa.
 
