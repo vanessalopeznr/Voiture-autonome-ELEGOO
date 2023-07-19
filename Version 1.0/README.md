@@ -11,13 +11,9 @@
 
    Despues de instalar el sistema operativo, es necesario ingresar la Micro SD a la Raspberry, conectar una pantalla, mouse y teclado para realizar algunas configuraciones como idioma, usuario y contrasena. Finalmente, retirar nuevamente la Micro SD e ingresar el programa [intermediary.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). En este proyecto se ingreso el programa en la siguiente ruta: _/media/user/rootfs/home/vehicle2/Desktop/_
 
-4. Instalacion de librerias necesarias
-   
-   Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner le travail. Pour tout installer, executez la commande suivante: *(SOLO ES NECESARIO INSTALAR PYTHON3)* Usado: python3 3.9.2
-   ```
-   sudo apt install python3-pip
-   pip install -r requirements.txt
-   ```
+4. Instalacion de librerias para correr programa de Raspberry
+
+   Solo es necesario Python3 y ya viene instalado por defecto. Version de python utilizada para este proyecto: 3.9.2
 
 5. [Paso si se encuentran problemas al detectar la camara] Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
    
@@ -44,7 +40,18 @@
 
    Donde su respuesta debe ser: _supported=1 detected=1
    
-7. Realizar comunicacion mediante un punto de acceso wifi. Dispositivo utilizado TP-LINK TL-MR3020 en modO 3G/4G. Solo se requiere alimentacion para el dispositivo.
+7. Realizar comunicacion mediante un punto de acceso wifi.
+
+   Se conecta el punto de acceso a una fuente de alimentacion (Power) y se realiza un reset para posteriormente conectarse a este dispositivo wifi mediante el usuario de red y la contrasena, generalmente indicadas en el dispositivo.
+   
+   Dispositivo utilizado para este proyecto: TP-LINK TL-MR3020 en modo 3G/4G.
+
+6. Identificar direccion IP de la raspberry.
+
+   Posterior a la conexion de la raspberry al punto de acceso, la direccion IP del dispositivo se puede encontrar utilizando el siguiente comando:
+   ```
+   hostname -I
+   ```
    
 9. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP, inspeccionar en transmision http para sacar "stream.mjpg" **Especificar eso aqui**
 10. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
@@ -64,6 +71,14 @@
    ```
 
    Y finalmente, reinicializar la Raspberry para ejecutar los cambios de configuracion.
+
+8. Instalacion de librerias para correr programa de PC
+
+   Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner le travail. Pour tout installer, executez la commande suivante:
+   ```
+   sudo apt install python3-pip
+   pip install -r requirements.txt
+   ```
 
    
 
