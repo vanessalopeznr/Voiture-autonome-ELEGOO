@@ -1,5 +1,6 @@
 # Paso a paso de descarga, configuracion y ejecucion del programa.
 
+### Configuracion Raspberry Pi 3 (Servidor)
 1. Descargar official supported operating system para Raspberry
    
    Se utiliza un sistema operativo [Raspberry Pi OS (64-bit) with desktop](https://www.raspberrypi.com/software/operating-systems/) de codigo abierto basado en Linux: Debian version 11 (bullseye) para un sistema de 64-bit de peso 818MB, con un nucleo Kernel version 6.1 que actúa como intermediario entre el hardware y el software. Es responsable de administrar los recursos del sistema, proporcionar servicios a los programas y facilitar la comunicación entre el hardware y el software.
@@ -52,9 +53,12 @@
    ```
    hostname -I
    ```
-   
-9. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP, inspeccionar en transmision http para sacar "stream.mjpg" **Especificar eso aqui**
-10. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
+### Configuracion de computador (Cliente)
+9. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP
+    
+    En el programa [People_detection.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Computer/People_detection.py) modificar la variable _address_ y sustituir por la direccion IP de la raspberry identidficada en el paso anterior.
+    
+11. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
    
    Ejecutar los siguientes comandos para realizar la configuracion.
 
