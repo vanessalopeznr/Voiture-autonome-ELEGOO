@@ -1,4 +1,0 @@
-python3
-pyserial
-
-Creo que importar serial y socket
