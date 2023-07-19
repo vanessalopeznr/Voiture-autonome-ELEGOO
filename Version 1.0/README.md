@@ -59,11 +59,17 @@
     
     En el programa [People_detection.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Computer/People_detection.py) modificar la variable _address_ y sustituir por la direccion IP de la raspberry identidficada en el paso anterior.
 
-8. Instalacion de librerias para correr programa de PC
+8. Recursos necesarios para correr programa de PC
+   
+   Solo es necesario python3. La version utilizada en este proyecto fue: python 3.8.10
 
+   Las librerias utilizadas son:
+   - Opencv version 4.5.5
+   - YOLO from ultralytics: pip install ultralytics. Si no se descarga, intentar clonar el archivo GitHub de yolov8 [Documentacion](https://docs.ultralytics.com/quickstart/)
+   - socket: El módulo socket forma parte de la biblioteca estándar de Python 
+     
    Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner le travail. Pour tout installer, executez la commande suivante:
    ```
-   sudo apt install python3-pip
    pip install -r requirements.txt
    ```
 
