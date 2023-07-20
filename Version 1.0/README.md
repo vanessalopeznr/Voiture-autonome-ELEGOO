@@ -28,7 +28,7 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
    
    Para optimizacion de la memoria SD, es posible descargar el sistema operativo de version Lite.
    
-   :warning: **[ Paso para Seccion directa]**Se realiza la descarga del [sistema operativo del proyecto](https://www.raspberrypi.com/software/operating-systems/)   **Cambiar link cuando se suba el systema operativo .img.xz**
+   :warning: **[ Paso para Seccion directa]** Se realiza la descarga del [sistema operativo del proyecto](https://www.raspberrypi.com/software/operating-systems/)   **Cambiar link cuando se suba el systema operativo .img.xz**
 
    - Opcion 1: Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD con su respectivo lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo Raspberry Pi OS (64-bit) with desktop directamente con el archivo comprimido que se descarga de la web en la memoria Micro SD.
      
