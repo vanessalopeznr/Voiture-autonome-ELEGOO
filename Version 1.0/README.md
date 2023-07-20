@@ -2,11 +2,7 @@
 
 En esta seccion se realizara las descargas y configuraciones necesarias para la ejecucion del proyecto sin pasar por los pasos descriptivos del proyecto. Es decir, las configuraciones ya se encuentran realizadas en el sistema operativo a descargar.
 
-### Configuracion Raspberry Pi 3 (Servidor)
-
-1. Descargar el sistema operativo del proyecto para Raspberry
-
-   Se realiza la descarga del sistema operativo y posteriormente se elige un metodo de instalacion en Micro SD como se indican las 2 opciones del paso 1. Se utiliza el [sistema operativo del proyecto](https://www.raspberrypi.com/software/operating-systems/) **Cambiar link cuando se suba el systema operativo .img.xz**
+   Se realiza la descarga del [sistema operativo del proyecto](https://www.raspberrypi.com/software/operating-systems/)  y posteriormente se elige un metodo de instalacion en Micro SD como se indican las 2 opciones del paso 1. **Cambiar link cuando se suba el systema operativo .img.xz**
 
    Se realizan los pasos 4 y 5 de la [configuracion de Raspberry](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/tree/main/Version%201.0#configuracion-raspberry-pi-3-servidor). Y toda la [configuracion del computador](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/tree/main/Version%201.0#configuracion-de-computador-cliente) (Pasos 6, 7 y 8)
 
