@@ -31,7 +31,8 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
 
    Despues de instalar el sistema operativo, es necesario ingresar la Micro SD a la Raspberry, conectar una pantalla, mouse, teclado y camara para la correcta ejecucion y configuracion del programa.
 
-    **Warning** **[ Paso para seccion Paso a Paso ]** Se realizan algunas configuraciones como idioma, usuario y contrasena. Finalmente, retirar nuevamente la Micro SD e ingresar el programa [intermediary.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). En este proyecto se ingreso el programa en la siguiente ruta: _/media/user/rootfs/home/vehicle2/Desktop/_
+   > **Warning**
+   **[ Paso para seccion Paso a Paso ]** Se realizan algunas configuraciones como idioma, usuario y contrasena. Finalmente, retirar nuevamente la Micro SD e ingresar el programa [intermediary.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). En este proyecto se ingreso el programa en la siguiente ruta: _/media/user/rootfs/home/vehicle2/Desktop/_
 
 4. Recursos necesarios para correr programa de Raspberry Pi
 
