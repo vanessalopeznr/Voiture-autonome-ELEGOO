@@ -125,7 +125,7 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
     python3 People_detection.py
     ```
 
-> **Warning** **: Paso necesario solo si se encuentran problemas al detectar la camara**
+> **⚠️Warning** **: Paso necesario solo si se encuentran problemas al detectar la camara**
 > 
 > Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
 > 
