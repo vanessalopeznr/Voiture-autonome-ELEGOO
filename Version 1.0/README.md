@@ -18,15 +18,19 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
 
 ### Configuracion Raspberry Pi 3 (Servidor)
 1. Descargar official supported operating system para Raspberry
-   | ⚠️ Paso para Seccion Paso a Paso                               |
+   | ⚠️ Paso para Seccion Paso a Paso |
    |------------------------------------------|
-   | You shouldn't. This is irreversible!     |
+   | Se utiliza un sistema operativo [Raspberry Pi OS (64-bit) with desktop](https://www.raspberrypi.com/software/operating-systems/) de codigo abierto basado en Linux: Debian version 11 (bullseye) para un sistema de 64-bit de peso 818MB, con un nucleo Kernel version 6.1 que actúa como intermediario entre el hardware y el software. Es responsable de administrar los recursos del sistema, proporcionar servicios a los programas y facilitar la comunicación entre el hardware y el software.
    
-   :warning: **[ Paso para Seccion Paso a Paso ]** Se utiliza un sistema operativo [Raspberry Pi OS (64-bit) with desktop](https://www.raspberrypi.com/software/operating-systems/) de codigo abierto basado en Linux: Debian version 11 (bullseye) para un sistema de 64-bit de peso 818MB, con un nucleo Kernel version 6.1 que actúa como intermediario entre el hardware y el software. Es responsable de administrar los recursos del sistema, proporcionar servicios a los programas y facilitar la comunicación entre el hardware y el software.
+   Para optimizacion de la memoria SD, es posible descargar el sistema operativo de version Lite. |
    
-   Para optimizacion de la memoria SD, es posible descargar el sistema operativo de version Lite.
+   | ⚠️ Paso para Seccion directa |
+   |------------------------------------------|
+   | Se realiza la descarga del [sistema operativo del proyecto](https://www.raspberrypi.com/software/operating-systems/)   **Cambiar link cuando se suba el systema operativo .img.xz** |
    
-   :warning: **[ Paso para Seccion directa]** Se realiza la descarga del [sistema operativo del proyecto](https://www.raspberrypi.com/software/operating-systems/)   **Cambiar link cuando se suba el systema operativo .img.xz**
+   
+   
+   :warning: **[ ]** 
 
 - Opcion 1: Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD con su respectivo lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo directamente con el archivo comprimido en la memoria Micro SD.
      
