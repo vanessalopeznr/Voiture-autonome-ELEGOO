@@ -1,4 +1,10 @@
+# Ejecucion directa del proyecto
+
+En esta seccion se realizara las descargas y configuraciones necesarias para la ejecucion del proyecto sin pasar por los pasos descriptivos del proyecto. Es decir, las configuraciones ya se encuentran realizadas en el sistema operativo a descargar.
+
 # Paso a paso de descarga, configuracion y ejecucion del programa.
+
+En esta seccion se realizara una descripcion detallada de los pasos a seguir para replicar el proyecto, con el fin de orientar aquellos que quisieran replicar el programa realizando modificaciones o cambiando de dispositivos.
 
 ### Configuracion Raspberry Pi 3 (Servidor)
 1. Descargar official supported operating system para Raspberry
