@@ -132,7 +132,10 @@
    ```
    python3 People_detection.py
    ```
-
+## Fuentes
+- Envio de flujo de video entre Raspberry y computador: [Source](https://github.com/raspberrypi/picamera2/blob/main/examples/mjpeg_server.py)
+- Comunicacion Raspberry-Arduino: [Source](https://www.youtube.com/watch?v=jU_b8WBTUew)
+- Auto Start a Program on Raspberry Pi (Opcion 4) : [Source](https://raspberrytips.com/autostart-a-program-on-boot/)
 
    
 
