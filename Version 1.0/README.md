@@ -11,11 +11,6 @@ En esta **Seccion directa** se realizara las descargas y configuraciones necesar
    ```
    python3 People_detection.py
    ```
-> **Note**
-> This is a note
-
-> **Warning**
-> This is a warning
 
 # Paso a paso de descarga, configuracion y ejecucion del programa.
 
@@ -30,9 +25,9 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
    
    :warning: **[ Paso para Seccion directa]** Se realiza la descarga del [sistema operativo del proyecto](https://www.raspberrypi.com/software/operating-systems/)   **Cambiar link cuando se suba el systema operativo .img.xz**
 
-   - Opcion 1: Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD con su respectivo lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo Raspberry Pi OS (64-bit) with desktop directamente con el archivo comprimido que se descarga de la web en la memoria Micro SD.
+- Opcion 1: Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD con su respectivo lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo Raspberry Pi OS (64-bit) with desktop directamente con el archivo comprimido que se descarga de la web en la memoria Micro SD.
      
-   - Opcion 2: Tambien es posible realizar la instalacion del sistema operativo en la memoria SD sin aplicaciones externas para linux, siguiendo este [video](https://www.youtube.com/watch?v=xSxNJSkSgpk).
+- Opcion 2: Tambien es posible realizar la instalacion del sistema operativo en la memoria SD sin aplicaciones externas para linux, siguiendo este [video](https://www.youtube.com/watch?v=xSxNJSkSgpk).
    
 3. Configuraciones iniciales de Raspberry
 
