@@ -18,7 +18,7 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
 
 ### Configuracion Raspberry Pi 3 (Servidor)
 1. Descargar official supported operating system para Raspberry
-   | ⚠️ Warning                               |
+   | ⚠️ Paso para Seccion Paso a Paso                               |
    |------------------------------------------|
    | You shouldn't. This is irreversible!     |
    
