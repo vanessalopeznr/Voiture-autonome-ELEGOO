@@ -1,6 +1,6 @@
 # Ejecucion directa del proyecto
 
-En esta seccion se realizara las descargas y configuraciones necesarias para la ejecucion del proyecto sin pasar por los pasos descriptivos del proyecto. Es decir, las configuraciones ya se encuentran realizadas en el sistema operativo a descargar.
+En esta **Seccion directa** se realizara las descargas y configuraciones necesarias para la ejecucion del proyecto sin pasar por los pasos descriptivos del proyecto. Es decir, las configuraciones ya se encuentran realizadas en el sistema operativo a descargar.
 
    Se realiza la descarga del [sistema operativo del proyecto](https://www.raspberrypi.com/software/operating-systems/)  y posteriormente se elige un metodo de instalacion en Micro SD como se indican las 2 opciones del paso 1. **Cambiar link cuando se suba el systema operativo .img.xz**
 
@@ -14,7 +14,7 @@ En esta seccion se realizara las descargas y configuraciones necesarias para la 
 
 # Paso a paso de descarga, configuracion y ejecucion del programa.
 
-En esta seccion se realizara una descripcion detallada de los pasos a seguir para replicar el proyecto, con el fin de orientar aquellos que quisieran replicar el programa realizando modificaciones o usando versiones diferentes en los dispositivos utilizados. **Poner enlace de los dispositivos utilizados**
+En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pasos a seguir para replicar el proyecto, con el fin de orientar aquellos que quisieran replicar el programa realizando modificaciones o usando versiones diferentes en los dispositivos utilizados. **Poner enlace de los dispositivos utilizados**
 
 ### Configuracion Raspberry Pi 3 (Servidor)
 1. Descargar official supported operating system para Raspberry
@@ -29,21 +29,23 @@ En esta seccion se realizara una descripcion detallada de los pasos a seguir par
    
 2. Configuraciones iniciales de Raspberry
 
-   Despues de instalar el sistema operativo, es necesario ingresar la Micro SD a la Raspberry, conectar una pantalla, mouse y teclado para realizar algunas configuraciones como idioma, usuario y contrasena. Finalmente, retirar nuevamente la Micro SD e ingresar el programa [intermediary.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). En este proyecto se ingreso el programa en la siguiente ruta: _/media/user/rootfs/home/vehicle2/Desktop/_
+   Despues de instalar el sistema operativo, es necesario ingresar la Micro SD a la Raspberry, conectar una pantalla, mouse, teclado y camara para la correcta ejecucion y configuracion del programa.
 
-3. Recursos necesarios para correr programa de Raspberry Pi
+   **Warning** **[ Paso para seccion Paso a Paso ]** Se realizan algunas configuraciones como idioma, usuario y contrasena. Finalmente, retirar nuevamente la Micro SD e ingresar el programa [intermediary.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). En este proyecto se ingreso el programa en la siguiente ruta: _/media/user/rootfs/home/vehicle2/Desktop/_
+
+4. Recursos necesarios para correr programa de Raspberry Pi
 
    Solo es necesario Python3 y ya viene instalado por defecto. Version de python utilizada para este proyecto: 3.9.2
 
    Realizar la conexion de la camara en la tarjeta Raspberry Pi.
    
-4. Realizar comunicacion mediante un punto de acceso wifi.
+5. Realizar comunicacion mediante un punto de acceso wifi.
 
    Se conecta el punto de acceso a una fuente de alimentacion (Power) y se realiza un reset para posteriormente conectarse a este dispositivo wifi mediante el usuario de red y la contrasena, generalmente indicadas en el dispositivo.
    
    Dispositivo utilizado para este proyecto: TP-LINK TL-MR3020 en modo 3G/4G.
 
-5. Identificar direccion IP de la raspberry.
+6. Identificar direccion IP de la raspberry.
 
    Posterior a la conexion de la raspberry al punto de acceso, la direccion IP del dispositivo se puede encontrar utilizando el siguiente comando:
    ```
