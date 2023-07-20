@@ -2,8 +2,6 @@
 
 En esta **Seccion directa** se realizara las descargas y configuraciones necesarias para la ejecucion del proyecto sin pasar por los pasos descriptivos del proyecto. Es decir, las configuraciones ya se encuentran realizadas en el sistema operativo a descargar.
 
-   
-
    Se realizan los pasos de la [configuracion de Raspberry](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/tree/main/Version%201.0#configuracion-raspberry-pi-3-servidor) y la [configuracion del computador](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/tree/main/Version%201.0#configuracion-de-computador-cliente).
 
    Por ultimo, se conecta una fuente de alimentacion a la raspberry, esperar algunos segundos que la Raspberry inicie y solo se debe ejecutar el comando en el computador:
