@@ -89,45 +89,41 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
 ### Integracion PC - Raspberry - Arduino
 10. Cuando se encuentren conectados los dos dispositivos (Raspberry y computador) al punto de acceso wifi y el arduino por puerto serial a la raspberry, se ejecuta estos comandos en los respectivos dispositivos:
 
-   Ejecutar el siguiente comando en la raspberry:
+    Ejecutar el siguiente comando en la raspberry:
+
+    ```
+    python3 intermediary.py
+    ```
+
+    Esperar que la terminal imprima _"Waiting for command..."_ y ejecutar el siguiente comando en el computador:
+    ```
+    python3 People_detection.py
+    ```
+
+    Finalmente, el programa debe mostrar la deteccion de las personas mediante la camara Raspberry y rotar el carro en direccion de la misma.
+
+    El programa se detiene, apoyando sobre las teclas `Ctr + C`.
    
-   ```
-   python3 intermediary.py
-   ```
+12. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
 
-   Esperar que la terminal imprima _"Waiting for command..."_ y ejecutar el siguiente comando en el computador:
-      
-   ```
-   python3 People_detection.py
-   ```
+    Este paso se realiza para evitar conectar las periferias a la raspberry y ella pueda operar automaticamente sin escribir el comando de ejecucion del programa.
 
-   Finalmente, el programa debe mostrar la deteccion de las personas mediante la camara Raspberry y rotar el carro en direccion de la misma.
+    Cuando el paso anterior se haya ejecutado de manera exitosa. Ejecutar los siguientes comandos para realizar la configuracion.
 
-   El programa se detiene, apoyando sobre las teclas `Ctr + C`.
-   
-11. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
-   
-   Este paso se realiza para evitar conectar las periferias a la raspberry y ella pueda operar automaticamente sin escribir el comando de ejecucion del programa.
+    Abrir el archivo ejecutable que administra las configuraciones al encender el dispositivo:
+    ```
+    sudo nano /etc/rc.local
+    ```
 
-   Cuando el paso anterior se haya ejecutado de manera exitosa. Ejecutar los siguientes comandos para realizar la configuracion.
+    Se escribe el comando que se desea ejecutar en la inicializacion del dispositivo antes de la ultima linea _exit 0_. En la configuracion de este proyecto se utilizo el comando _python3 home/vehicle2/Desktop/connectionhttp.py_
+    ```
+    python3 <ruta del archivo ejecutable>
+    ```
 
-   Abrir el archivo ejecutable que administra las configuraciones al encender el dispositivo:
-
-   ```
-   sudo nano /etc/rc.local
-   ```
-
-   Se escribe el comando que se desea ejecutar en la inicializacion del dispositivo antes de la ultima linea _exit 0_. En la configuracion de este proyecto se utilizo el comando _python3 home/vehicle2/Desktop/connectionhttp.py_
-   
-   ```
-   python3 <ruta del archivo ejecutable>
-   ```
-
-   Por ultimo, reinicializar la Raspberry para ejecutar los cambios de configuracion y ahora, solo se debe ejecutar el comando del computador:
-
-   ```
-   python3 People_detection.py
-   ```
+    Por ultimo, reinicializar la Raspberry para ejecutar los cambios de configuracion y ahora, solo se debe ejecutar el comando del computador:
+    ```
+    python3 People_detection.py
+    ```
 
 > **Warning** **: Paso necesario solo si se encuentran problemas al detectar la camara**
 > 
