@@ -2,9 +2,23 @@
 
 En esta seccion se realizara las descargas y configuraciones necesarias para la ejecucion del proyecto sin pasar por los pasos descriptivos del proyecto. Es decir, las configuraciones ya se encuentran realizadas en el sistema operativo a descargar.
 
+### Configuracion Raspberry Pi 3 (Servidor)
+
+1. Descargar el sistema operativo del proyecto para Raspberry
+
+   Se realiza la descarga del sistema operativo y posteriormente se elige un metodo de instalacion en Micro SD como se indican las 2 opciones del paso 1. Se utiliza el [sistema operativo del proyecto](https://www.raspberrypi.com/software/operating-systems/) **Cambiar link cuando se suba el systema operativo .img.xz**
+
+   Se realizan los pasos 4 y 5 de la [configuracion de Raspberry](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/tree/main/Version%201.0#configuracion-raspberry-pi-3-servidor). Y toda la [configuracion del computador](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/tree/main/Version%201.0#configuracion-de-computador-cliente) (Pasos 6, 7 y 8)
+
+   Por ultimo, se conecta la camara y una fuente de alimentacion a la raspberry, esperar algunos segundos que la Raspberry inicie y solo se debe ejecutar el comando en el computador:
+
+   ```
+   python3 People_detection.py
+   ```
+
 # Paso a paso de descarga, configuracion y ejecucion del programa.
 
-En esta seccion se realizara una descripcion detallada de los pasos a seguir para replicar el proyecto, con el fin de orientar aquellos que quisieran replicar el programa realizando modificaciones o cambiando de dispositivos.
+En esta seccion se realizara una descripcion detallada de los pasos a seguir para replicar el proyecto, con el fin de orientar aquellos que quisieran replicar el programa realizando modificaciones o usando versiones diferentes en los dispositivos utilizados. **Poner enlace de los dispositivos utilizados**
 
 ### Configuracion Raspberry Pi 3 (Servidor)
 1. Descargar official supported operating system para Raspberry
@@ -13,7 +27,7 @@ En esta seccion se realizara una descripcion detallada de los pasos a seguir par
    
    Para optimizacion de la memoria SD, es posible descargar el sistema operativo de version Lite.
 
-   - Opcion 1: Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD en un lector para ser lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo Raspberry Pi OS (64-bit) with desktop directamente con el archivo comprimido que se descarga de la web en la memoria Micro SD.
+   - Opcion 1: Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD con su respectivo lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo Raspberry Pi OS (64-bit) with desktop directamente con el archivo comprimido que se descarga de la web en la memoria Micro SD.
      
    - Opcion 2: Tambien es posible realizar la instalacion del sistema operativo en la memoria SD sin aplicaciones externas para linux, siguiendo este [video](https://www.youtube.com/watch?v=xSxNJSkSgpk).
    
@@ -24,34 +38,8 @@ En esta seccion se realizara una descripcion detallada de los pasos a seguir par
 3. Recursos necesarios para correr programa de Raspberry Pi
 
    Solo es necesario Python3 y ya viene instalado por defecto. Version de python utilizada para este proyecto: 3.9.2
-   
 
-> **Warning** **: Paso necesario solo si se encuentran problemas al detectar la camara**
-> 
-> Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
-> 
-> La configuracion utilizada es especificamente para Raspberry camara V2.1 y se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) où ce fichier est normalement accessible sous _/boot/config.txt_
-> 
-> Si se desea utilizar otra camara, se puede consultar la siguiente tabla en la [[Documentacion]](https://www.raspberrypi.com/documentation/computers/camera_software.html)
-> | Camera Module  | In /boot/config.txt |
-> | ------------- | ------------- |
-> | V1 camera (OV5647) | dtoverlay=ov5647 |
-> | V2 camera (IMX219) | dtoverlay=imx219 |
-> | HQ camera (IMX477) | dtoverlay=imx477 |
-> | GS camera (IMX296) | dtoverlay=imx296 |
-> | Camera Module 3 (IMX708) | dtoverlay=imx708 |
-> | IMX290 and IMX327 | dtoverlay=imx290,clock-frequency=74250000 or dtoverlay=imx290 |
-> | IMX378 | dtoverlay=imx378 |
-> | OV9281 | dtoverlay=ov9281 |
-> 
-> Pour activer la détection automatique de la caméra, les utilisateurs doivent ajouter l'entrée camera_auto_detect=1 dans le fichier config.txt. **Votre Raspberry Pi devra être redémarré après avoir modifié ce fichier**
-> 
-> Para verificar que la Raspberry esta detectando correctamente la camara, se debe utilizar el siguiente comando, confirmando la respuesta indicada:
-> ```
-> vcgencmd get_camera
-> ```
-> 
-> Donde su respuesta debe ser: _supported=1 detected=1
+   Realizar la conexion de la camara en la tarjeta Raspberry Pi.
    
 4. Realizar comunicacion mediante un punto de acceso wifi.
 
@@ -85,7 +73,7 @@ En esta seccion se realizara una descripcion detallada de los pasos a seguir par
    - YOLO from ultralytics version 8.0.117:  [Documentacion](https://docs.ultralytics.com/quickstart/) para descarga de la libreria. 
    - socket: Este modulo forma parte de la biblioteca estándar de Python
 
-8. Realizar comunicacion mediante un punto de acceso wifi (Ver paso 4).
+8. Realizar comunicacion mediante un punto de acceso wifi con el computador (Ver paso 4).
 
 ### Configuracion del arduino
 9. Para la descarga del programa tipo _.ino_ al dispositivo arduino, es necesario descargar el [Softare Arduino](https://www.arduino.cc/en/software):
@@ -138,6 +126,34 @@ En esta seccion se realizara una descripcion detallada de los pasos a seguir par
    ```
    python3 People_detection.py
    ```
+
+> **Warning** **: Paso necesario solo si se encuentran problemas al detectar la camara**
+> 
+> Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
+> 
+> La configuracion utilizada es especificamente para Raspberry camara V2.1 y se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) où ce fichier est normalement accessible sous _/boot/config.txt_
+> 
+> Si se desea utilizar otra camara, se puede consultar la siguiente tabla en la [[Documentacion]](https://www.raspberrypi.com/documentation/computers/camera_software.html)
+> | Camera Module  | In /boot/config.txt |
+> | ------------- | ------------- |
+> | V1 camera (OV5647) | dtoverlay=ov5647 |
+> | V2 camera (IMX219) | dtoverlay=imx219 |
+> | HQ camera (IMX477) | dtoverlay=imx477 |
+> | GS camera (IMX296) | dtoverlay=imx296 |
+> | Camera Module 3 (IMX708) | dtoverlay=imx708 |
+> | IMX290 and IMX327 | dtoverlay=imx290,clock-frequency=74250000 or dtoverlay=imx290 |
+> | IMX378 | dtoverlay=imx378 |
+> | OV9281 | dtoverlay=ov9281 |
+> 
+> Pour activer la détection automatique de la caméra, les utilisateurs doivent ajouter l'entrée camera_auto_detect=1 dans le fichier config.txt. **Votre Raspberry Pi devra être redémarré après avoir modifié ce fichier**
+> 
+> Para verificar que la Raspberry esta detectando correctamente la camara, se debe utilizar el siguiente comando, confirmando la respuesta indicada:
+> ```
+> vcgencmd get_camera
+> ```
+> 
+> Donde su respuesta debe ser: _supported=1 detected=1
+
 ## Fuentes
 - Envio de flujo de video entre Raspberry y computador: [Source](https://github.com/raspberrypi/picamera2/blob/main/examples/mjpeg_server.py)
 - Comunicacion Raspberry-Arduino: [Source](https://www.youtube.com/watch?v=jU_b8WBTUew)
