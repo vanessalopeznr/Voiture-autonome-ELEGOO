@@ -2,7 +2,7 @@
 
 En esta **Seccion directa** se realizara las descargas y configuraciones necesarias para la ejecucion del proyecto sin pasar por los pasos descriptivos del proyecto. Es decir, las configuraciones ya se encuentran realizadas en el sistema operativo a descargar.
 
-   Se realiza la descarga del [sistema operativo del proyecto](https://www.raspberrypi.com/software/operating-systems/)  y posteriormente se elige un metodo de instalacion en Micro SD como se indican las 2 opciones del paso 1. **Cambiar link cuando se suba el systema operativo .img.xz**
+   
 
    Se realizan los pasos de la [configuracion de Raspberry](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/tree/main/Version%201.0#configuracion-raspberry-pi-3-servidor) y la [configuracion del computador](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/tree/main/Version%201.0#configuracion-de-computador-cliente).
 
@@ -24,19 +24,21 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
 ### Configuracion Raspberry Pi 3 (Servidor)
 1. Descargar official supported operating system para Raspberry
    
-   Se utiliza un sistema operativo [Raspberry Pi OS (64-bit) with desktop](https://www.raspberrypi.com/software/operating-systems/) de codigo abierto basado en Linux: Debian version 11 (bullseye) para un sistema de 64-bit de peso 818MB, con un nucleo Kernel version 6.1 que actúa como intermediario entre el hardware y el software. Es responsable de administrar los recursos del sistema, proporcionar servicios a los programas y facilitar la comunicación entre el hardware y el software.
+   :warning: **[ Paso para Seccion Paso a Paso ]** Se utiliza un sistema operativo [Raspberry Pi OS (64-bit) with desktop](https://www.raspberrypi.com/software/operating-systems/) de codigo abierto basado en Linux: Debian version 11 (bullseye) para un sistema de 64-bit de peso 818MB, con un nucleo Kernel version 6.1 que actúa como intermediario entre el hardware y el software. Es responsable de administrar los recursos del sistema, proporcionar servicios a los programas y facilitar la comunicación entre el hardware y el software.
    
    Para optimizacion de la memoria SD, es posible descargar el sistema operativo de version Lite.
+   
+   :warning: **[ Paso para Seccion directa]**Se realiza la descarga del [sistema operativo del proyecto](https://www.raspberrypi.com/software/operating-systems/)   **Cambiar link cuando se suba el systema operativo .img.xz**
 
    - Opcion 1: Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD con su respectivo lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo Raspberry Pi OS (64-bit) with desktop directamente con el archivo comprimido que se descarga de la web en la memoria Micro SD.
      
    - Opcion 2: Tambien es posible realizar la instalacion del sistema operativo en la memoria SD sin aplicaciones externas para linux, siguiendo este [video](https://www.youtube.com/watch?v=xSxNJSkSgpk).
    
-2. Configuraciones iniciales de Raspberry
+3. Configuraciones iniciales de Raspberry
 
    Despues de instalar el sistema operativo, es necesario ingresar la Micro SD a la Raspberry, conectar una fuente de alimentacion, una pantalla, mouse, teclado y camara para la correcta ejecucion y configuracion del programa.
 
-   > :warning: **[ Paso para seccion Paso a Paso ]** Se realizan algunas configuraciones como idioma, usuario y contrasena. Finalmente, retirar nuevamente la Micro SD e ingresar el programa [intermediary.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). En este proyecto se ingreso el programa en la siguiente ruta: _/media/user/rootfs/home/vehicle2/Desktop/_
+   :warning: **[ Paso para seccion Paso a Paso ]** Se realizan algunas configuraciones como idioma, usuario y contrasena. Finalmente, retirar nuevamente la Micro SD e ingresar el programa [intermediary.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). En este proyecto se ingreso el programa en la siguiente ruta: _/media/user/rootfs/home/vehicle2/Desktop/_
 
 4. Recursos necesarios para correr programa de Raspberry Pi
 
