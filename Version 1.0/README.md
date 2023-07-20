@@ -11,6 +11,11 @@ En esta **Seccion directa** se realizara las descargas y configuraciones necesar
    ```
    python3 People_detection.py
    ```
+> **Note**
+> This is a note
+
+> **Warning**
+> This is a warning
 
 # Paso a paso de descarga, configuracion y ejecucion del programa.
 
