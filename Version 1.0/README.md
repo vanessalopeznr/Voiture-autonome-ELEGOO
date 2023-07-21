@@ -1,10 +1,10 @@
-# Ejecucion directa del proyecto
+# Exécution directe du projet
 
-En esta **Seccion directa** se realizara las descargas y configuraciones necesarias para la ejecucion del proyecto sin pasar por los pasos descriptivos del proyecto. Es decir, las configuraciones ya se encuentran realizadas en el sistema operativo a descargar.
+Dans cette **section directe**, les téléchargements et les configurations nécessaires à l'exécution du projet seront effectués sans passer par les étapes descriptives du projet. C'est-à-dire que les configurations sont déjà faites dans le système d'exploitation à télécharger.
 
-   Se realizan los pasos de la configuracion de Raspberry y la configuracion del computador. Es decir, solo hasta el paso 8.
+   Les étapes de la configuration du Raspberry et de l'ordinateur doivent être réalisées jusqu'à l'étape 8.
 
-   Por ultimo, se conecta una fuente de alimentacion a la raspberry, esperar algunos segundos que la Raspberry inicie y solo se debe ejecutar el comando en el computador:
+   Enfin, il faut brancher une alimentation au Raspberry, attendre quelques secondes que le Raspberry démarre et simplement exécuter la commande sur l'ordinateur :
 
    ```
    python3 People_detection.py
