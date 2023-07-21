@@ -23,7 +23,7 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
    
    | ⚠️ Paso para Seccion directa |
    |------------------------------------------|
-   | Se realiza la descarga del [sistema operativo del proyecto](https://www.raspberrypi.com/software/operating-systems/)   **Cambiar link cuando se suba el systema operativo .img.xz** |
+   | Se realiza la descarga del [sistema operativo del proyecto]([https://www.raspberrypi.com/software/operating-systems/](https://drive.google.com/drive/u/2/folders/1tpNfoRl7W_w9oUsnynbm_qp60fdG-QWy))  |
 
 - Opcion 1: Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD con su respectivo lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo directamente con el archivo comprimido en la memoria Micro SD.
 
