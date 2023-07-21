@@ -82,7 +82,7 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
     ```
     sudo apt install arduino
     ```
-    Cuando la descarga finalice, abrir el programa, conectar por puerto serial USB el arduino al computador, verificar en "Outils" que le type de carte soit _Arduino Uno_ et le port soit (generalment) _/dev/ttyACMO (Arduino Uno)_ y Téléverser le code.
+    Cuando la descarga finalice, abrir el [programa](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Arduino/ArduinoConnectionRaspberry.ino), conectar por puerto serial USB el arduino al computador, verificar en "Outils" que le type de carte soit _Arduino Uno_ et le port soit (generalment) _/dev/ttyACMO (Arduino Uno)_ y Téléverser le code.
 
     Finalmente, se desconecta el arduino del computador y se conecta con el mismo cable USB a la Raspberry.
     
