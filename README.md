@@ -22,3 +22,4 @@ Materiales utilizados:
 - Voir ce qui est faisable concernant la partie asservissement (PID, ...).
 - Mettre sur la voiture une carte GPU (telle que la Nvidia Jetson Nano) afin d'exécuter le réseau Yolo. La voiture serait ainsi autonome vis-à-vis du PC, du WiFi, ...
 
+holaaa
