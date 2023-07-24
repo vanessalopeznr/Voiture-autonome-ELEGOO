@@ -2,7 +2,7 @@
 
 Dans cette **section directe**, les téléchargements et les configurations nécessaires à l'exécution du projet seront effectués sans passer par les étapes descriptives du projet. C'est-à-dire que les configurations sont déjà faites dans le système d'exploitation à télécharger.
 
-   Les étapes de la configuration du Raspberry et de l'ordinateur doivent être réalisées jusqu'à l'étape 8.
+   Les étapes de la configuration du Raspberry, l'ordinateur et l'aduino doivent être réalisées jusqu'à l'étape 9.
 
    Enfin, il faut brancher une alimentation au Raspberry, attendre quelques secondes que le Raspberry démarre et simplement exécuter la commande sur l'ordinateur :
 
@@ -78,7 +78,7 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
 8. Realizar comunicacion mediante un punto de acceso wifi con el computador (Ver paso 4).
 
 ### Configuracion del arduino
-9. Para la descarga del programa tipo _.ino_ al dispositivo arduino, es necesario descargar el [Softare Arduino](https://www.arduino.cc/en/software):
+9. Para la descarga del programa tipo _.ino_ al dispositivo arduino, es necesario descargar el [Softare Arduino](https://www.arduino.cc/en/software) en cualquier disposotivo ya que el programa solo es para descargar el codigo en el arduino, de la siguiente manera:
     ```
     sudo apt install arduino
     ```
