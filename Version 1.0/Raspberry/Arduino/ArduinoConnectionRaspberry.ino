@@ -5,6 +5,8 @@
 #define IN2 8
 #define IN3 9
 #define IN4 11
+String cmd_width="None";
+String cmd_height="None";
 int pause=70;
 
 void stop() {
@@ -41,6 +43,37 @@ void width(String command){
   }
 }
 
+void height(String command){
+  if (command=="fast") {
+    analogWrite(ENA,255);
+    analogWrite(ENB,255);
+    digitalWrite(IN1,HIGH);
+    digitalWrite(IN2,LOW);
+    digitalWrite(IN3,LOW);
+    digitalWrite(IN4,HIGH);
+    Serial.println("fast");
+  }
+  else if (command=="normal") {
+    analogWrite(ENA,150);
+    analogWrite(ENB,150);
+    digitalWrite(IN1,HIGH);
+    digitalWrite(IN2,LOW);
+    digitalWrite(IN3,LOW);
+    digitalWrite(IN4,HIGH);
+    Serial.println("normal");
+    //delay(60);
+  }
+  else {
+    analogWrite(ENA,70);
+    analogWrite(ENB,70);
+    digitalWrite(IN1,HIGH);
+    digitalWrite(IN2,LOW);
+    digitalWrite(IN3,LOW);
+    digitalWrite(IN4,HIGH);
+    Serial.println("slow");
+  }
+}
+
 void setup() {
   Serial.begin(115200);
   while(!Serial){}
@@ -57,13 +90,18 @@ void setup() {
 void loop() {
   if (Serial.available() > 0) { //The number of bytes that Arduino receive in buffer
     String message = Serial.readStringUntil('_');
-    Serial.print(message);
-    Serial.print('\n');
     int index = message.indexOf('/');
     int last = message.length();
-    String cmd_width = message.substring(0,index);
-    String cmd_height = message.substring(index+1,last);
-    width(cmd_width);
+    
+    cmd_width = message.substring(0,index);
+    cmd_height = message.substring(index+1,last);
+    
+    if (cmd_width=="None"){
+      height(cmd_height);
+    }
+    else {
+      width(cmd_width);
+    }
   }
 
 }
