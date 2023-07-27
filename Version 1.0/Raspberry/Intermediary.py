@@ -96,11 +96,7 @@ try:
     server_thread = Thread(target=StreamingServer(('', 8000), StreamingHandler).serve_forever)
     server_thread.daemon=True
     server_thread.start()
-    '''
-    address = ('', 8000)
-    server = StreamingServer(address, StreamingHandler)
-    server.serve_forever()
-    '''
+
     #Create a socket objet
     server_socket=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     
