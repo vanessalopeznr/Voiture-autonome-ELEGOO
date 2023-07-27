@@ -124,14 +124,9 @@ try:
         #Receive the command from the client
         command = client_socket.recv(1024).decode()
         
-        #Add code here for actions after the command
-        
-        command_list=command.split("/")
-        #client_socket.sendall(response.encode())
-        
         client_socket.close()
-        print(command_list)
-        
+
+        #Send the command to Arduino
         ser.write((str(command)+"_").encode('utf-8'))
         ser.reset_input_buffer() #If arduino send data, the buffer is where all the data arrive, reset
 
