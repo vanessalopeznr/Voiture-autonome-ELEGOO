@@ -15,6 +15,8 @@ Materiales utilizados:
 - Lector Micro SD
 - Point d'access
 
+<img width="1312" alt="wire connect rasp" src="https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/assets/123451768/ce6a7315-382b-42d2-8a7e-e2b670df5ce6">
+
 ## Areas de oportunidad 
 
 - Gérer la détection de plusieurs personnes.
