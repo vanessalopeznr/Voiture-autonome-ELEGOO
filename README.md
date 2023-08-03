@@ -15,7 +15,7 @@ Materiales utilizados:
 - Lector Micro SD
 - Point d'access
 
-<img width="1312" alt="wire connect rasp" src="https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/assets/123451768/ce6a7315-382b-42d2-8a7e-e2b670df5ce6">
+<img width="2080" alt="wire connect rasp gitversion" src="https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/assets/123451768/bdf2722c-8abb-46f6-b5c6-439c4d281423">
 
 ## Areas de oportunidad 
 
