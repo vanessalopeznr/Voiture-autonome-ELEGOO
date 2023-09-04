@@ -29,10 +29,21 @@ Dans le contenu du repository, vous trouverez le [Rapport](https://github.com/va
 - Lecteur Micro SD
 - Point d'accès
 
+## Fonctionnement
+
+Un flux vidéo capturé par une carte Raspberry est envoyé via une communication wifi à un ordinateur pour exécuter la détection d’objet, qui, lorsqu’il a identifié
+la cible et sa position, transmet certaines commandes de direction du véhicule à une carte arduino qui contrôle les moteurs pour suivre l’objet détecté.
+
 <img width="2080" alt="wire connect rasp gitversion" src="https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/assets/123451768/bdf2722c-8abb-46f6-b5c6-439c4d281423">
 
-## Areas de oportunidad 
+## Domaines d'opportunités 
 
-- Voir ce qui est faisable concernant la partie asservissement (PID, ...).
-- Mettre sur la voiture une carte GPU (telle que la Nvidia Jetson Nano) afin d'exécuter le réseau Yolo. La voiture serait ainsi autonome vis-à-vis du PC, du WiFi, ...
+### Remplacement ou retrait de dispositifs
+
+— Supprimer la carte Arduino et sa communication pour gérer directement le contrôle du moteur à partir de la carte Raspberry via ses ports d’entrée et de sortie.
+— Mettre sur la voiture une carte GPU (telle que la Nvidia Jetson Nano) afin d’exécuter le réseau Yolo en remplaçant la carte Raspberry pour assurer la communication et l’ordinateur pour mettre en œuvre le programme. La voiture serait autonome par rapport au PC et il n’y aurait pas de problème de portée du réseau wifi.
+
+### Asservissement du vehicule
+— Optimisation du code existant avec une architecture plus robuste dans les conditions de traitement.
+— Intégrer un PID pour réguler et maintenir la direction du véhicule sur la cible.
 
