@@ -29,6 +29,23 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
    |------------------------------------------|
    | Se realiza la descarga del [sistema operativo del proyecto](https://drive.google.com/file/d/16MZGht5VuJNM8DZ3qeuCO1S89kebPjpr/view?usp=drive_link)  |
 
+
+
+## Étape par étape du téléchargement, de la configuration et de l'exécution du programme.
+
+Dans cette section **Pas à Pas** nous ferons une description détaillée des étapes à suivre pour répliquer le projet, afin de guider ceux qui voudraient répliquer le programme en faisant des modifications ou en utilisant des versions différentes dans les appareils utilisés. 
+
+### Configuration Raspberry Pi 3 (Serveur)
+1. Télécharger le système d'exploitation officiel pour Raspberry Pi 3
+   | ⚠️ Section étape par étape
+   |------------------------------------------|
+   | Un système d'exploitation open source basé sur Linux [Raspberry Pi OS (64-bit) with desktop] (https://www.raspberrypi.com/software/operating-systems/) est utilisé : Debian version 11 (bullseye) pour un système 64 bits pesant 818MB, avec un noyau version 6.1 qui agit comme un intermédiaire entre le matériel et le logiciel. Il est chargé de gérer les ressources du système, de fournir des services aux programmes et de faciliter la communication entre le matériel et les logiciels.
+   Pour optimiser la mémoire SD, il est possible de télécharger la version Lite du système d'exploitation. |
+   
+   | ⚠️ Step to Direct Section
+   |------------------------------------------|
+   Téléchargement du [système d'exploitation du projet] (https://drive.google.com/file/d/16MZGht5VuJNM8DZ3qeuCO1S89kebPjpr/view?usp=drive_link) |
+   
 - Opcion 1: Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD con su respectivo lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo directamente con el archivo comprimido en la memoria Micro SD.
 
 - Opcion 2: Tambien es posible realizar la instalacion del sistema operativo en la memoria SD sin aplicaciones externas para linux, siguiendo este [video](https://www.youtube.com/watch?v=xSxNJSkSgpk).
