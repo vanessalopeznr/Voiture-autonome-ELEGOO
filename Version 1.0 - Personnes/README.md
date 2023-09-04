@@ -2,7 +2,7 @@
 
 Dans cette **section directe**, les téléchargements et les configurations nécessaires à l'exécution du projet seront effectués sans passer par les étapes descriptives du projet. C'est-à-dire que les configurations sont déjà faites dans le système d'exploitation à télécharger.
 
-   Les étapes de la configuration du Raspberry, l'ordinateur et l'aduino doivent être réalisées jusqu'à l'étape 9.
+   Les étapes de la configuration du Raspberry, l'ordinateur et l'aduino doivent être réalisées jusqu'à l'étape 8.
 
    Enfin, il faut brancher une alimentation au Raspberry, attendre quelques secondes que le Raspberry démarre et simplement exécuter la commande sur l'ordinateur :
 
