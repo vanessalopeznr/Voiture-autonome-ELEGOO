@@ -19,6 +19,12 @@ Vous trouverez ici 2 versions :
 
 Dans le contenu du repository, vous trouverez le [Rapport](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Rapport_PRe_Vanessa_LOPEZ.pdf) qui décrit les matériaux, le guide de travail, l'entraînement au réseau neuronal et les résultats obtenus dans le cadre de ce stage.
 
+## Stockage de fichiers
+
+Pour ce projet, l'outil de stockage "Google drive" a été utilisé pour les grands fichiers. Vous y trouverez les différentes versions du système d'exploitation pour le Raspberry et les images d'entraînement pour la version 2 du projet.
+
+Lien du Drive: https://drive.google.com/drive/u/2/folders/1tpNfoRl7W_w9oUsnynbm_qp60fdG-QWy
+
 ## Matériel utilisé :
 - ELEGOO Smart Robot Car Kit V3.0 plus
 - Raspberry pi 3 Model B+
