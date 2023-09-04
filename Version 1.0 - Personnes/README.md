@@ -37,9 +37,9 @@ Dans cette section **Pas à Pas** nous ferons une description détaillée des é
 
    Après avoir installé le système d'exploitation, il est nécessaire d'insérer la carte Micro SD dans le Raspberry, de connecter une alimentation électrique, un écran, une souris, un clavier et une caméra pour l'exécution et la configuration correctes du programme.
    
-   | Pour plus d'informations, consultez la section "Pas à pas" du site ⚠️.
+   | Pas uniquement pour la section Étape par étape ⚠️.
    |------------------------------------------|
-   | Vous effectuez quelques configurations telles que la langue, l'utilisateur et le mot de passe. Enfin, retirez à nouveau la carte Micro SD et entrez dans le programme [intermediary.py] (https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). Dans ce projet, le programme a été entré dans le chemin suivant : _/media/user/rootfs/home/vehicle2/Desktop/_ |
+   | Vous effectuez quelques configurations telles que la langue, l'utilisateur et le mot de passe. Enfin, retirez à nouveau la carte Micro SD et entrez dans le programme [intermediary.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). Dans ce projet, le programme a été entré dans le chemin suivant : _/media/user/rootfs/home/vehicle2/Desktop/_ |
 
    
 - Opcion 1: Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD con su respectivo lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo directamente con el archivo comprimido en la memoria Micro SD.
