@@ -40,10 +40,12 @@ la cible et sa position, transmet certaines commandes de direction du véhicule 
 
 ### Remplacement ou retrait de dispositifs
 
-— Supprimer la carte Arduino et sa communication pour gérer directement le contrôle du moteur à partir de la carte Raspberry via ses ports d’entrée et de sortie.
-— Mettre sur la voiture une carte GPU (telle que la Nvidia Jetson Nano) afin d’exécuter le réseau Yolo en remplaçant la carte Raspberry pour assurer la communication et l’ordinateur pour mettre en œuvre le programme. La voiture serait autonome par rapport au PC et il n’y aurait pas de problème de portée du réseau wifi.
+- Supprimer la carte Arduino et sa communication pour gérer directement le contrôle du moteur à partir de la carte Raspberry via ses ports d’entrée et de sortie.
+- 
+- Mettre sur la voiture une carte GPU (telle que la Nvidia Jetson Nano) afin d’exécuter le réseau Yolo en remplaçant la carte Raspberry pour assurer la communication et l’ordinateur pour mettre en œuvre le programme. La voiture serait autonome par rapport au PC et il n’y aurait pas de problème de portée du réseau wifi.
 
 ### Asservissement du vehicule
-— Optimisation du code existant avec une architecture plus robuste dans les conditions de traitement.
-— Intégrer un PID pour réguler et maintenir la direction du véhicule sur la cible.
+- Optimisation du code existant avec une architecture plus robuste dans les conditions de traitement.
+
+- Intégrer un PID pour réguler et maintenir la direction du véhicule sur la cible.
 
