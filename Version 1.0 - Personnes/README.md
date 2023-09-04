@@ -1,4 +1,8 @@
-# Exécution directe du projet
+# Detection des personnes
+
+Dans cette version, vous pouvez mettre en œuvre 2 utilisations du référentiel, l'exécution directe et le pas à pas.
+
+## Exécution directe du projet
 
 Dans cette **section directe**, les téléchargements et les configurations nécessaires à l'exécution du projet seront effectués sans passer par les étapes descriptives du projet. C'est-à-dire que les configurations sont déjà faites dans le système d'exploitation à télécharger.
 
@@ -10,7 +14,7 @@ Dans cette **section directe**, les téléchargements et les configurations néc
    python3 People_detection.py
    ```
 
-# Paso a paso de descarga, configuracion y ejecucion del programa.
+## Paso a paso de descarga, configuracion y ejecucion del programa.
 
 En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pasos a seguir para replicar el proyecto, con el fin de orientar aquellos que quisieran replicar el programa realizando modificaciones o usando versiones diferentes en los dispositivos utilizados. **Poner enlace de los dispositivos utilizados**
 
@@ -151,11 +155,6 @@ En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pa
 > ```
 > 
 > Donde su respuesta debe ser: _supported=1 detected=1
-
-## Fuentes
-- Envio de flujo de video entre Raspberry y computador: [Source](https://github.com/raspberrypi/picamera2/blob/main/examples/mjpeg_server.py)
-- Comunicacion Raspberry-Arduino: [Source](https://www.youtube.com/watch?v=jU_b8WBTUew)
-- Auto Start a Program on Raspberry Pi (Opcion 4) : [Source](https://raspberrytips.com/autostart-a-program-on-boot/)
 
    
 
