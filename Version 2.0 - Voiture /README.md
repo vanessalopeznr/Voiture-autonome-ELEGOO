@@ -22,3 +22,5 @@ Initialement, le réseau a été entraîné avec 170 images du véhicule, 100 im
 
 ![V1 (1)](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/assets/123451768/148ae198-16d4-4c1c-98f9-4850ae1da405)
 
+Pour cette raison, la base de données a été augmentée à 1200 images et les époques à 50.
+
