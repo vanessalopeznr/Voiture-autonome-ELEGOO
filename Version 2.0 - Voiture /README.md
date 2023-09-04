@@ -8,6 +8,8 @@ La création de l’ensemble de données contient 250 illustrations stockées da
 
 Tous les entraînements de réseaux neuronaux ont été effectués sur la base du guide ["How to Train YOLOv8 Object Detection on a Custom Dataset"](https://blog.roboflow.com/how-to-train-yolov8-on-a-custom-dataset/) de Piotr Skalski. Et les étapes depuis "Preparing a custom dataset for YOLOv8" ont été fidèlement suivies. YOLOV8 a été utilisé dans [le notebook roboflow](https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb?ref=blog.roboflow.com) sur google colab, où le processus à suivre pour l'entraînement réussi d'un modèle est clairement spécifié.
 
+![V2 (1)](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/assets/123451768/e2996ffb-fa18-4099-9d76-216a7194bd22)
+
 ### Quelques précisions sur la configuration des paramètres dans l'entraînement du réseau.
 
 - Après l'étiquetage des images, un ensemble de données de 1200 images a été généré à l'aide de l'outil d'augmentation de la plateforme "Roboflow", dans lequel des rotations horizontales, du bruit et des carrés noirs ont été appliqués dans certaines sections de l'image.
@@ -17,3 +19,6 @@ Tous les entraînements de réseaux neuronaux ont été effectués sur la base d
 ### Erreurs commises
 
 Initialement, le réseau a été entraîné avec 170 images du véhicule, 100 images supplémentaires générées par l'algorithme d'augmentation Python et 375 ont été ajoutées par l'outil d'augmentation de la plateforme "roboflow". Avec cet ensemble de données de 645 images et 25 époques, le modèle ne différencie pas très bien l’environnement et le véhicule dans chaque image. En outre, il est difficile de détecter correctement les voitures et n’effectue pas l’identification dans les images où l’arrière du véhicule est situé. Enfin, le seuil de détection est trop bas pour l’identification des voitures.
+
+![V1 (1)](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/assets/123451768/148ae198-16d4-4c1c-98f9-4850ae1da405)
+
