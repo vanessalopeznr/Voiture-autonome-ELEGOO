@@ -14,23 +14,6 @@ Dans cette **section directe**, les téléchargements et les configurations néc
    python3 People_detection.py
    ```
 
-## Paso a paso de descarga, configuracion y ejecucion del programa.
-
-En esta **Seccion Paso a Paso** se realizara una descripcion detallada de los pasos a seguir para replicar el proyecto, con el fin de orientar aquellos que quisieran replicar el programa realizando modificaciones o usando versiones diferentes en los dispositivos utilizados. **Poner enlace de los dispositivos utilizados**
-
-### Configuracion Raspberry Pi 3 (Servidor)
-1. Descargar official supported operating system para Raspberry
-   | ⚠️ Paso para Seccion Paso a Paso |
-   |------------------------------------------|
-   | Se utiliza un sistema operativo [Raspberry Pi OS (64-bit) with desktop](https://www.raspberrypi.com/software/operating-systems/) de codigo abierto basado en Linux: Debian version 11 (bullseye) para un sistema de 64-bit de peso 818MB, con un nucleo Kernel version 6.1 que actúa como intermediario entre el hardware y el software. Es responsable de administrar los recursos del sistema, proporcionar servicios a los programas y facilitar la comunicación entre el hardware y el software.
-   Para optimizacion de la memoria SD, es posible descargar el sistema operativo de version Lite. |
-   
-   | ⚠️ Paso para Seccion directa |
-   |------------------------------------------|
-   | Se realiza la descarga del [sistema operativo del proyecto](https://drive.google.com/file/d/16MZGht5VuJNM8DZ3qeuCO1S89kebPjpr/view?usp=drive_link)  |
-
-
-
 ## Étape par étape du téléchargement, de la configuration et de l'exécution du programme.
 
 Dans cette section **Pas à Pas** nous ferons une description détaillée des étapes à suivre pour répliquer le projet, afin de guider ceux qui voudraient répliquer le programme en faisant des modifications ou en utilisant des versions différentes dans les appareils utilisés. 
@@ -39,12 +22,25 @@ Dans cette section **Pas à Pas** nous ferons une description détaillée des é
 1. Télécharger le système d'exploitation officiel pour Raspberry Pi 3
    | ⚠️ Section étape par étape
    |------------------------------------------|
-   | Un système d'exploitation open source basé sur Linux [Raspberry Pi OS (64-bit) with desktop] (https://www.raspberrypi.com/software/operating-systems/) est utilisé : Debian version 11 (bullseye) pour un système 64 bits pesant 818MB, avec un noyau version 6.1 qui agit comme un intermédiaire entre le matériel et le logiciel. Il est chargé de gérer les ressources du système, de fournir des services aux programmes et de faciliter la communication entre le matériel et les logiciels.
+   | Un système d'exploitation open source basé sur Linux [Raspberry Pi OS (64-bit) with desktop](https://www.raspberrypi.com/software/operating-systems/) est utilisé : Debian version 11 (bullseye) pour un système 64 bits pesant 818MB, avec un noyau version 6.1 qui agit comme un intermédiaire entre le matériel et le logiciel. Il est chargé de gérer les ressources du système, de fournir des services aux programmes et de faciliter la communication entre le matériel et les logiciels.
    Pour optimiser la mémoire SD, il est possible de télécharger la version Lite du système d'exploitation. |
    
-   | ⚠️ Step to Direct Section
+   | ⚠️ Section directe
    |------------------------------------------|
-   Téléchargement du [système d'exploitation du projet] (https://drive.google.com/file/d/16MZGht5VuJNM8DZ3qeuCO1S89kebPjpr/view?usp=drive_link) |
+   Téléchargement du [système d'exploitation du projet](https://drive.google.com/file/d/16MZGht5VuJNM8DZ3qeuCO1S89kebPjpr/view?usp=drive_link) |
+
+   - Option 1 : Pour l'installation de ce système d'exploitation sur le raspberry, nous avons utilisé une mémoire Micro SD avec son lecteur USB Micro SD respectif et avec l'aide du programme [Balena Etcher](https://etcher.balena.io/) nous avons installé le système d'exploitation directement avec le fichier compressé sur la mémoire Micro SD.
+
+   - Option 2 : Il est également possible d'installer le système d'exploitation sur la mémoire SD sans applications linux externes en suivant cette [vidéo](https://www.youtube.com/watch?v=xSxNJSkSgpk).
+   
+3. Configuration initiale du Raspberry
+
+   Après avoir installé le système d'exploitation, il est nécessaire d'insérer la carte Micro SD dans le Raspberry, de connecter une alimentation électrique, un écran, une souris, un clavier et une caméra pour l'exécution et la configuration correctes du programme.
+   
+   | Pour plus d'informations, consultez la section "Pas à pas" du site ⚠️.
+   |------------------------------------------|
+   | Vous effectuez quelques configurations telles que la langue, l'utilisateur et le mot de passe. Enfin, retirez à nouveau la carte Micro SD et entrez dans le programme [intermediary.py] (https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). Dans ce projet, le programme a été entré dans le chemin suivant : _/media/user/rootfs/home/vehicle2/Desktop/_ |
+
    
 - Opcion 1: Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD con su respectivo lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo directamente con el archivo comprimido en la memoria Micro SD.
 
