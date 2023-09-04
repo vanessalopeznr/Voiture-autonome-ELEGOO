@@ -8,6 +8,8 @@ Pour cette version, vous pouvez suivre les 2 méthodes fournies dans le README d
 
 Dans l'exécution directe, vous devez changer le fichier du système d'exploitation, qui est maintenant implémenté ["Operating system V2"](https://drive.google.com/drive/u/2/folders/1gscH-BdjAsyWTWr99hqlNjWaWxfFIOIJ)
 
+Dans le méthod pas à pas, il faut utiliser les fichiers du dossier [Projet](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/tree/main/Version%202.0%20-%20Voiture%20/Projet)
+
 ## Dataset
 
 La création de l’ensemble de données contient 250 illustrations stockées dans le dossier ["train"](https://drive.google.com/drive/u/2/folders/1B2gjhMdKPoxeWlDchPq-U7RaNp5DSdJj) avec des images du véhicule ELEGOO original trouvées sur internet, des images de véhicules similaires et des photos prises dans le véhicule en laboratoire. Cependant, ces images ne sont pas suffisantes pour un bon entraînement du modèle, c'est pourquoi un algorithme d'augmentation ["DataGenerator"](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%202.0%20-%20Voiture%20/Entra%C3%AEnement%20%20voiture/DataGenerator.py) a été utilisé pour disposer d'une base de données robuste. Les 25 images les plus représentatives du véhicule ont été prises et 250 images supplémentaires ont été obtenues. Au final, l'ensemble de données est composé de 500 images.
