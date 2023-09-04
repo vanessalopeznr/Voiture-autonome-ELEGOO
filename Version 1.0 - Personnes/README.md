@@ -4,7 +4,7 @@ Dans cette version, vous pouvez mettre en œuvre 2 utilisations du référentiel
 
 ## Exécution directe du projet
 
-Dans cette **section directe**, les téléchargements et les configurations nécessaires à l'exécution du projet seront effectués sans passer par les étapes descriptives du projet. C'est-à-dire que les configurations sont déjà faites dans le système d'exploitation à télécharger.
+Dans cette **section directe**, les téléchargements et les configurations nécessaires pour exécuter le projet seront effectués uniquement en configurant la communication entre le Raspberry et le PC (Saisir l'adresse IP du Raspberry utilisé dans l'ordinateur). Les configurations sont déjà effectuées dans le système d'exploitation à télécharger.
 
    Les étapes de la configuration du Raspberry, l'ordinateur et l'aduino doivent être réalisées jusqu'à l'étape 8.
 
