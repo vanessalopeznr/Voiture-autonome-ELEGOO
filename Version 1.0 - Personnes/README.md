@@ -40,115 +40,103 @@ Dans cette section **Pas à Pas** nous ferons une description détaillée des é
    | Pas uniquement pour la section Étape par étape ⚠️.
    |------------------------------------------|
    | Vous effectuez quelques configurations telles que la langue, l'utilisateur et le mot de passe. Enfin, retirez à nouveau la carte Micro SD et entrez dans le programme [intermediary.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). Dans ce projet, le programme a été entré dans le chemin suivant : _/media/user/rootfs/home/vehicle2/Desktop/_ |
-
    
-- Opcion 1: Para la instalacion de este sistema operativo en la raspberry, se utilizo una memoria Micro SD con su respectivo lecteur USB Micro SD y con ayuda del programa [Balena Etcher](https://etcher.balena.io/) se realizo la instalacion del sistema operativo directamente con el archivo comprimido en la memoria Micro SD.
+5. Ressources nécessaires pour exécuter les programmes Raspberry Pi
 
-- Opcion 2: Tambien es posible realizar la instalacion del sistema operativo en la memoria SD sin aplicaciones externas para linux, siguiendo este [video](https://www.youtube.com/watch?v=xSxNJSkSgpk).
+   Seul **Python3** est nécessaire et est déjà installé par défaut. Version de Python utilisée pour ce projet : 3.9.2
+
+   Connectez la caméra à la carte Raspberry Pi.
    
-3. Configuraciones iniciales de Raspberry
+6. Communication via un point d'accès wifi.
 
-   Despues de instalar el sistema operativo, es necesario ingresar la Micro SD a la Raspberry, conectar una fuente de alimentacion, una pantalla, mouse, teclado y camara para la correcta ejecucion y configuracion del programa.
+   Le point d'accès est connecté à une alimentation (Ordinateur) et une réinitialisation est effectuée pour se connecter ensuite à ce dispositif wifi en utilisant l'utilisateur et le mot de passe du réseau, généralement indiqués sur le dispositif.
    
-   | ⚠️ Paso para seccion Paso a Paso |
-   |------------------------------------------|
-   | Se realizan algunas configuraciones como idioma, usuario y contrasena. Finalmente, retirar nuevamente la Micro SD e ingresar el programa [intermediary.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Intermediary.py). En este proyecto se ingreso el programa en la siguiente ruta: _/media/user/rootfs/home/vehicle2/Desktop/_ |
+   Appareil utilisé pour ce projet : TP-LINK TL-MR3020 en mode 3G/4G.
 
-5. Recursos necesarios para correr programa de Raspberry Pi
+7. Identifier l'adresse IP du raspberry.
 
-   Solo es necesario Python3 y ya viene instalado por defecto. Version de python utilizada para este proyecto: 3.9.2
-
-   Realizar la conexion de la camara en la tarjeta Raspberry Pi.
-   
-6. Realizar comunicacion mediante un punto de acceso wifi.
-
-   Se conecta el punto de acceso a una fuente de alimentacion (Power) y se realiza un reset para posteriormente conectarse a este dispositivo wifi mediante el usuario de red y la contrasena, generalmente indicadas en el dispositivo.
-   
-   Dispositivo utilizado para este proyecto: TP-LINK TL-MR3020 en modo 3G/4G.
-
-7. Identificar direccion IP de la raspberry.
-
-   Posterior a la conexion de la raspberry al punto de acceso, la direccion IP del dispositivo se puede encontrar utilizando el siguiente comando:
+   Après avoir connecté le raspberry au point d'accès, l'adresse IP de l'appareil peut être trouvée en utilisant la commande suivante :
    ```
    hostname -I
    ```
-### Configuracion de computador (Cliente)
-6. Realizar las correcciones necesarias de los archivos como cambios de direcciones IP
-    
-    En el programa [People_detection.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Computer/People_detection.py) modificar la variable _address_ y sustituir por la direccion IP de la raspberry identidficada en el paso anterior.
 
-7. Recursos necesarios para correr programa de PC
+### Configuration de l'ordinateur (Client)
+6. Apportez les corrections nécessaires aux fichiers telles que les changements d'adresse IP.
+    
+    Dans le programme [People_detection.py](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Computer/People_detection.py), modifiez la variable _address_ et remplacez-la par l'adresse IP du raspberry identifié à l'étape précédente.
+
+7. Ressources nécessaires pour exécuter le programme PC
    
-   Solo es necesario python3. La version utilizada en este proyecto fue: python 3.8.10
+   Seul python3 est nécessaire. La version utilisée dans ce projet est : python 3.8.10
    
-   Le fichier requirements.txt contient tous les packages Python à installer pour faire fonctionner le travail. Pour tout installer, executez la commande suivante:
+   Le fichier requirements.txt contient tous les paquets Python à installer pour exécuter le travail. Pour l'installer, exécutez la commande suivante :
    ```
    pip install -r requirements.txt
    ```
    
-   Algunas especificaciones son (Las librerias estan incluidas en requirements.txt para su descarga):
+   Voici quelques spécifications (les bibliothèques sont incluses dans le fichier requirements.txt pour le téléchargement) :
    
    - Opencv version 4.7.0.72
-   - YOLO from ultralytics version 8.0.117:  [Documentacion](https://docs.ultralytics.com/quickstart/) para descarga de la libreria. 
-   - socket: Este modulo forma parte de la biblioteca estándar de Python
+   - YOLO from ultralytics version 8.0.117 : [Documentation](https://docs.ultralytics.com/quickstart/) pour le téléchargement de la bibliothèque. 
+   - Socket : ce module fait partie de la bibliothèque standard de Python.
 
-8. Realizar comunicacion mediante un punto de acceso wifi con el computador (Ver paso 4).
+8. Communiquer via un point d'accès wifi avec l'ordinateur (voir étape 4).
 
-### Configuracion del arduino
-9. Para la descarga del programa tipo _.ino_ al dispositivo arduino, es necesario descargar el [Softare Arduino](https://www.arduino.cc/en/software) en cualquier disposotivo ya que el programa solo es para descargar el codigo en el arduino, de la siguiente manera:
+### Configuration de l'arduino
+9. Pour télécharger [le programme](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Arduino/ArduinoConnectionRaspberry.ino) de type _.ino_ sur l'appareil arduino, il est nécessaire de télécharger le [Softare Arduino](https://www.arduino.cc/en/software) sur n'importe quel appareil car le programme ne sert qu'à télécharger le code sur l'arduino, comme suit :
     ```
     sudo apt install arduino
     ```
-    Cuando la descarga finalice, abrir el [programa](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/Arduino/ArduinoConnectionRaspberry.ino), conectar por puerto serial USB el arduino al computador, verificar en "Outils" que le type de carte soit _Arduino Uno_ et le port soit (generalment) _/dev/ttyACMO (Arduino Uno)_ y Téléverser le code.
+    Lorsque le téléchargement est terminé, ouvrez le programme, connectez par port série USB l'arduino à l'ordinateur, vérifiez dans "Outils" que le type de carte est _Arduino Uno_ et que le port est (généralement) _/dev/ttyACMO (Arduino Uno)_ et Téléverser le code.
 
-    Finalmente, se desconecta el arduino del computador y se conecta con el mismo cable USB a la Raspberry.
+    Enfin, déconnectez l'arduino de l'ordinateur et connectez-le avec le même câble USB au Raspberry.
     
-### Integracion PC - Raspberry - Arduino
-10. Cuando se encuentren conectados los dos dispositivos (Raspberry y computador) al punto de acceso wifi y el arduino por puerto serial a la raspberry, se ejecuta estos comandos en los respectivos dispositivos:
+### PC - Raspberry - Intégration Arduino
+10. Lorsque les deux appareils (Raspberry et ordinateur) sont connectés au point d'accès wifi et l'arduino par le port série au Raspberry, exécutez ces commandes sur les appareils respectifs :
 
-    Ejecutar el siguiente comando en la raspberry:
+    Exécutez la commande suivante sur le raspberry :
 
     ```
     python3 intermediary.py
     ```
 
-    Esperar que la terminal imprima _"Waiting for command..."_ y ejecutar el siguiente comando en el computador:
+    Attendez que le terminal affiche _"Waiting for command..."_ et exécutez la commande suivante sur l'ordinateur :
     ```
     python3 People_detection.py
     ```
 
-    Finalmente, el programa debe mostrar la deteccion de las personas mediante la camara Raspberry y rotar el carro en direccion de la misma.
+    Enfin, le programme doit afficher la détection de personnes par la caméra Raspberry et faire pivoter la voiture dans la direction de la caméra.
 
-    El programa se detiene, apoyando sobre las teclas `Ctr + C`.
+    Le programme s'arrête en appuyant sur `Ctr + C`.
    
-12. Loop en Raspberry para realizar ejecucion del programa de manera automatica al encendido del dispositivo.
+12. Faites une boucle dans le Raspberry pour exécuter le programme automatiquement lorsque l'appareil est allumé.
 
-    Este paso se realiza para evitar conectar las periferias a la raspberry y ella pueda operar automaticamente sin escribir el comando de ejecucion del programa.
+    Cette étape est réalisée pour éviter de connecter les périphériques au Raspberry afin qu'il puisse fonctionner automatiquement sans avoir à taper la commande pour exécuter le programme.
 
-    Cuando el paso anterior se haya ejecutado de manera exitosa. Ejecutar los siguientes comandos para realizar la configuracion.
+    Lorsque l'étape précédente a été exécutée avec succès. Exécutez les commandes suivantes pour effectuer la configuration.
 
-    Abrir el archivo ejecutable que administra las configuraciones al encender el dispositivo:
+    Ouvrez le fichier exécutable qui gère les paramètres lorsque l'appareil est mis sous tension :
     ```
     sudo nano /etc/rc.local
     ```
 
-    Se escribe el comando que se desea ejecutar en la inicializacion del dispositivo antes de la ultima linea _exit 0_. En la configuracion de este proyecto se utilizo el comando _python3 home/vehicle2/Desktop/connectionhttp.py_
+    Écrivez la commande que vous voulez exécuter à l'initialisation de l'appareil avant la dernière ligne _exit 0_. La commande _python3 home/vehicle2/Desktop/connectionhttp.py_ a été utilisée dans la configuration de ce projet.
     ```
-    python3 <ruta del archivo ejecutable>
+    python3 <chemin du fichier exécutable>
     ```
 
-    Por ultimo, reinicializar la Raspberry para ejecutar los cambios de configuracion y ahora, solo se debe ejecutar el comando del computador:
+    Enfin, redémarrez le Raspberry pour exécuter les changements de configuration et maintenant, exécutez simplement la commande sur l'ordinateur :
     ```
     python3 People_detection.py
     ```
 
-> **⚠️ Warning** **: Paso necesario solo si se encuentran problemas al detectar la camara**
+> **⚠️ Warning** **: Étape requise uniquement en cas de problèmes lors de la détection de la caméra**
 > 
-> Configuracion de especificaciones en el archivo config.txt [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
+> Paramètres de spécification dans le fichier config.txt  [[Documentacion]](https://www.raspberrypi.com/documentation/computers/config_txt.html)
 > 
-> La configuracion utilizada es especificamente para Raspberry camara V2.1 y se encuentra en el archivo [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) où ce fichier est normalement accessible sous _/boot/config.txt_
+> La configuration utilisée est spécifique à la caméra Raspberry V2.1 et se trouve dans le fichier [config.txt](https://github.com/vanessalopeznr/Voiture-autonome-ELEGOO/blob/main/Version%201.0/Raspberry/config.txt) où ce fichier est normalement accessible sous _/boot/config.txt_.
 > 
-> Si se desea utilizar otra camara, se puede consultar la siguiente tabla en la [[Documentacion]](https://www.raspberrypi.com/documentation/computers/camera_software.html)
+> Si vous souhaitez utiliser un autre appareil photo, vous pouvez consulter le tableau suivant dans la [[Documentation]].(https://www.raspberrypi.com/documentation/computers/camera_software.html)
 > | Camera Module  | In /boot/config.txt |
 > | ------------- | ------------- |
 > | V1 camera (OV5647) | dtoverlay=ov5647 |
@@ -162,15 +150,9 @@ Dans cette section **Pas à Pas** nous ferons une description détaillée des é
 > 
 > Pour activer la détection automatique de la caméra, les utilisateurs doivent ajouter l'entrée camera_auto_detect=1 dans le fichier config.txt. **Votre Raspberry Pi devra être redémarré après avoir modifié ce fichier**
 > 
-> Para verificar que la Raspberry esta detectando correctamente la camara, se debe utilizar el siguiente comando, confirmando la respuesta indicada:
+> Pour vérifier que le Raspberry détecte correctement la caméra, utilisez la commande suivante, en confirmant la réponse indiquée :
 > ```
 > vcgencmd get_camera
 > ```
 > 
-> Donde su respuesta debe ser: _supported=1 detected=1
-
-   
-
-   
-
-
+> La réponse devrait être la suivante : supported=1 detected=1
